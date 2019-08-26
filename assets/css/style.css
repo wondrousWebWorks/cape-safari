@@ -1,0 +1,259 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400|Roboto:100,300,400,900&display=swap');
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+  font-family: "Raleway", sans-serif;
+}
+
+/***************************************************** Simple Colors*/
+
+.bg-color-dark-blue {
+  background-color: hsl(197, 37%, 24%); /* #23404C */
+}
+
+.color-dark-blue {
+  color: hsl(197, 37%, 24%); /* #23404C */
+}
+
+.bg-color-light-blue {
+  background-color: hsl(173, 58%, 39%); /* #2A9D8F */
+}
+
+.color-light-blue {
+  color: 	hsl(173, 58%, 39%); /* #2A9D8F */
+}
+
+.bg-color-yellow {
+  background-color: hsl(43, 74%, 66%); /* #E9C46A */
+}
+
+.color-yellow {
+  color: 	hsl(43, 74%, 66%); /* #E9C46A */
+}
+
+.bg-color-orange {
+  background-color: hsl(27, 87%, 67%); /* #F4A261 */
+}
+
+.color-orange {
+  color: 	hsl(27, 87%, 67%); /* #F4A261 */
+}
+
+.bg-color-ochre {
+  background-color: hsl(12, 76%, 61%); /* #E76F51 */
+}
+
+.color-ochre {
+  color: hsl(12, 76%, 61%); /* #E76F51 */
+}
+
+.bg-color-google-red {
+  background-color: hsl(7, 64%, 52%); /* #d34836 */
+}
+
+.bg-color-facebook-blue {
+  background-color: hsl(220, 46%, 48%); /* #4267b2 */
+}
+
+.color-off-white {
+  color: hsl(0, 0%, 97%); /* #f7f7f7 */
+}
+
+/***************************************************** General Alignment / Spacing / Text Transformations*/
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+/*****************************************************Buttons*/
+
+.medium-button {
+  font-size: 20px;
+  padding: 7px 15px;
+  border: none;
+  border-radius: 6px;
+  transition: background-color .3s ease-in-out, transform .3s ease-in-out;
+}
+
+.medium-button:hover {
+  background-color: hsl(27, 87%, 59%);
+  transform: scale(1.1);
+}
+
+/*****************************************************Navbar*/
+
+.bg-color-navbar {
+  background: linear-gradient(to right, #F4A261, #E9C46A, #F4A261);
+}
+
+.navbar, 
+.navbar-nav {
+  padding: 0;
+  margin: 0;
+}
+
+.navbar .navbar-brand {
+  margin-left: 20px;
+  font-size: 1.5em;
+  transition: transform 0.5s ease-in-out, color 0.5s ease-in-out;
+}
+
+.navbar .navbar-brand:hover {
+  transform: scale(1.2);
+  color: #2A9D8F;
+}
+
+.navbar-text {
+  font-size: 1.1em;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  width: 100%;
+  font-size: 1.2em;
+  padding: 15px 20px;
+  font-weight: 400;
+}
+
+.navbar .navbar-nav .dropdown-menu {
+  box-shadow: 3px 3px 5px 2px #555;
+  border-left: 8px solid #2A9D8F;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item {
+  font-weight: 400;
+  transition: background-color .3s ease-in-out, color .3s ease-in-out;
+}
+
+.navbar .navbar-nav .dropdown-menu .dropdown-item:hover {
+  background-color: #2A9D8F;
+  color: #264653;
+}
+
+/* hover.css */
+.hvr-shutter-out-horizontal {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: transparent;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hvr-shutter-out-horizontal:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(20, 20, 20, .5);
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transform-origin: 50%;
+  transform-origin: 50%;
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
+  color: white;
+}
+.hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+/*****************************************************Modals*/
+
+#sign-in-modal .modal-body {
+  margin-bottom: 30px;
+}
+
+.modal .modal-header {
+  border-bottom: 1px solid #2A9D8F;
+}
+
+.modal .modal-header .close {
+  opacity: 1;
+  text-shadow: none;
+  transition: transform .5s ease-in-out;
+}
+
+.modal .modal-header .close:hover {
+  transform: rotate(180deg);
+}
+
+.modal .modal-content {
+  background-color: #23404C;
+  color: #f7f7f7;
+}
+
+.modal .modal-content .modal-header h5 {
+  text-align: center;
+}
+
+.modal .modal-body a button {
+  width: 90%;
+}
+
+.btn-google-sign-in-up {
+  transition: background-color .3s ease-in-out, transform .3s ease-in-out;
+}
+
+.btn-google-sign-in-up:hover {
+  background-color: hsl(7, 64%, 45%);
+  color: #f7f7f7;
+  transform: scale(1.08);
+}
+
+.btn-facebook-sign-in-up {
+  transition: background-color .3s ease-in-out, transform .3s ease-in-out;
+}
+
+.btn-facebook-sign-in-up:hover {
+  background-color: hsl(220, 46%, 40%);
+  color: #f7f7f7;
+  transform: scale(1.08);
+}
+
+.modal .modal-body hr {
+  position: relative;
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 2px;
+  background-color: #333;
+  width: 30%;
+}
+
+.modal .modal-body p {
+  position: absolute;
+  top: 5px;
+}
+
+.modal .modal-body .modal-divider {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+}
+.modal .modal-body .modal-divider hr {
+  background-color: #E9C46A;
+}
+
