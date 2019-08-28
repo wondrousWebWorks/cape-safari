@@ -13,20 +13,19 @@
 </head>
 
 <body>
-  
+
   <header class="header">
     <!---------------------------------------------------------------------- Nabvar -->
     <nav class="navbar bg-color-navbar fixed-top navbar-expand-lg">
       <a class="navbar-brand color-dark-blue" href="#"> <i class="fas fa-binoculars"></i> <strong>Cape</strong>
         Safari</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse"
-        data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-        aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggle-icon"><i class="fas fa-bars color-dark-blue"></i></span>
       </button>
 
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <span class="navbar-text color-dark-blue d-none d-sm-inline-block ml-auto my-auto"><em>
+        <span class="navbar-text color-dark-blue d-none d-xl-inline-block ml-auto my-auto"><em>
             Rediscover The Joys Of Nature</em>
         </span>
         <ul class="navbar-nav bg-color-dark-blue ml-auto">
@@ -48,6 +47,10 @@
               <a class="dropdown-item uppercase color-yellow" href="#"><i
                   class="fas fa-clipboard-list nav-icon color-orange"></i>&nbsp;&nbsp;Upcoming
                 Events</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item uppercase color-yellow" href="#"><i
+                  class="fas fa-tram nav-icon color-orange"></i>&nbsp;&nbsp;Explore Cape Town <span
+                  class="badge badge-success">NEW!</span></a>
             </div>
           </li>
           <li class="nav-item bg-color-light-blue">
@@ -68,190 +71,298 @@
     <!-- /.navbar -->
   </header>
 
-
-  <!---------------------------------------------------------------------- Modal Sign In-->
-  <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title uppercase color-orange">Sign In</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true"><i class="fas fa-times color-ochre"></i></span>
-          </button>
-        </div>
-        <div class="modal-body color-yellow">
-          <div class="row">
-            <div class="col-12 text-center">
-              <a href="">
-                <button type="button" class="btn btn-lg btn-google-sign-in-up bg-color-google-red color-off-white uppercase">
-                  <i class="fab fa-google"></i> Sign In With Google
-                </button>
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 modal-divider">
-              <hr>
-              <p>OR</p>
-              <hr>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col text-center">
-              <a href="">
-                <button type="button" class="btn btn-facebook-sign-in-up btn-lg bg-color-facebook-blue color-off-white uppercase">
-                  <i class="fab fa-facebook"></i> Sign In With Facebook
-                </button>
-              </a>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 modal-divider">
-              <hr>
-              <p>OR</p>
-              <hr>
-            </div>
-          </div>
-          <form>
-            <div class="form-group">
-              <label for="email-sign-in">Email address</label>
-              <input type="email" class="form-control" id="email-sign-in" aria-describedby="emailHelp"
-                placeholder="Enter email" required>
-              <small class="form-text color-light-blue">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="password-sign-in">Password</label>
-              <input type="password" class="form-control" id="password-sign-in" placeholder="Password" required>
-            </div>
-            <div class="form-check">
-              <input type="checkbox" class="form-check-input" id="sign-in-checkbox">
-              <label class="form-check-label" for="sign-in-checkbox">Remember me</label>
-            </div>
-            <button type="submit" class="medium-button bg-color-orange color-dark-blue uppercase">Sign In</button>
-          </form>
-          <div class="row">
-            <div class="col">
-              <p>Not registered yet? Sign Up Now!
-                <button type="button" class="btn btn-success btn-sm" data-dismiss="modal" aria-label="Close"
-                  data-toggle="modal" data-target="#sign-up-modal">
-                  <i class="fas fa-user-plus"></i>
-                </button>
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+  <main>
+    <!---------------------------------------------------------------------- Hero Shot-->
+    <div class="container-fluid hero-shot">
+      <h4 class="chevron-bounce text-center"><i class="fas fa-angle-double-down"></i></h4>
     </div>
-  </div>
-  <!-- /.modal sign in-->
 
-  <!---------------------------------------------------------------------- Modal Contact-->
-  <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content bg-color-sign-in-modal">
-        <div class="modal-header">
-          <h5 class="modal-title uppercase color-orange">Contact</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true"><i class="fas fa-times color-ochre"></i></span>
-          </button>
-        </div>
-        <div class="modal-body color-yellow">
-          <form>
-            <div class="form-group">
-              <label for="email-contact">Email address</label>
-              <input type="email" class="form-control" id="email-contact" aria-describedby="emailHelp"
-                placeholder="Enter email" required>
-              <small class="form-text color-light-blue">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="select-query-type">What Would You Like To Enquire About?</label>
-              <select class="custom-select mr-sm-2" id="select-query-type">
-                <option selected>Select Query Type</option>
-                <option value="1">Bookings</option>
-                <option value="2">Accommodation</option>
-                <option value="3">Events</option>
-                <option value="4">Other</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <textarea class="form-control" id="contact-text-area" rows="3" placeholder="Enter query here..."></textarea>
-            </div>
-            <button type="submit" class="medium-button bg-color-orange color-dark-blue uppercase">Submit</button>
-          </form>
-        </div>
+    <!---------------------------------------------------------------------- Jumbotron-->
+    <section class="container-fluid jumbotron-wrapper vertical-center">
+      <div class="jumbotron text-center bg-color-transparent color-off-white">
+        <h1>The Ultimate Safari Experience.</h1>
+        <h3 class="d-none d-md-block">Adventure. Excitement. Only at Cape Safari!</h3>
+        <hr class="d-sm-none d-md-block my-4 bg-color-orange">
+        <p><span class="badge badge-success badge-limited-time d-block d-sm-inline-block">Limited Time Offer!</span>
+          Sign Up NOW and
+          receive a <span><mark class="d-inline-block">15% discount</mark></span><br class="d-sm-none"> on your first safari experience.</p>
+        <button type="button" class="btn large-button bg-color-ochre color-off-white" data-toggle="modal"
+          data-target="#sign-up-modal">
+          Sign Up
+        </button>
       </div>
-    </div>
-  </div>
-  <!-- /.contact-->
+    </section>
 
-  <!---------------------------------------------------------------------- Modal Booking-->
-  <div class="modal fade" id="booking-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
-    aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-      <div class="modal-content bg-color-sign-in-modal">
-        <div class="modal-header">
-          <h5 class="uppercase modal-title color-orange">Booking</h5>
-          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true"><i class="fas fa-times color-ochre"></i></span>
-          </button>
-        </div>
-        <div class="modal-body color-yellow">
-          <form>
-            <div class="form-group">
-              <label for="email-booking">Email address</label>
-              <input type="email" class="form-control" id="email-booking" aria-describedby="emailHelp"
-                placeholder="Enter email">
-              <small class="form-text color-light-blue">We'll never share your email with anyone else.</small>
-            </div>
-            <div class="form-group">
-              <label for="select-accommodation-type">Accommodation Option</label>
-              <select class="custom-select mr-sm-2" id="select-accommodation-type">
-                <option selected>Select Accomodation</option>
-                <option value="1">Two Bedroom Treehouse</option>
-                <option value="2">Three Bedroom Bungalow</option>
-                <option value="3">Two Bed Hotel Room</option>
-                <option value="4">Three Bed Hotel Room</option>
-                <option value="5">Penthouse Hotel Suite</option>
-              </select>
-            </div>
-            <div class="form-group">
-              <div class="form-row">
-                <div class="col">
-                  <label for="booking-checkin-date">Check-In Date</label>
-                  <input type="date" class="form-control" id="booking-checkin-date"></input>
-                </div>
-                <div class="col">
-                  <label for="booking-checkout-date">Check-Out Date</label>
-                  <input type="date" class="form-control" id="booking-checkout-date"></input>
-                </div>
+
+    <!---------------------------------------------------------------------- Modal Sign In-->
+    <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="sign-in-modal"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title uppercase color-orange">Sign In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times color-ochre"></i></span>
+            </button>
+          </div>
+          <div class="modal-body color-yellow">
+            <div class="row">
+              <div class="col-12 text-center">
+                <a href="">
+                  <button type="button"
+                    class="btn btn-lg btn-google-sign-in-up bg-color-google-red color-off-white uppercase">
+                    <i class="fab fa-google"></i> Sign In With Google
+                  </button>
+                </a>
               </div>
             </div>
-            <div class="form-group">
-              <label for="credit-card-number">Credit Card Number</label>
-              <input type="text" class="form-control" id="credit-card-number" aria-describedby="credit card number"
-                placeholder="Enter Credit Card Number">
-            </div>
-            <div class="form-group">
-              <div class="form-row">
-                <div class="col">
-                  <label for="credit-card-expiry">Card Expiry Date</label>
-                  <input type="text" class="form-control" id="credit-card-expiry" placeholder="E.g. 02/2021"></input>
-                </div>
-                <div class="col">
-                  <label for="credit-card-security-code">3 Digit Security Code</label>
-                  <input type="text" class="form-control" id="credit-card-security-code" placeholder="E.g. 123"></input>
-                </div>
+            <div class="row">
+              <div class="col-12 modal-divider">
+                <hr>
+                <p>OR</p>
+                <hr>
               </div>
             </div>
-            <button type="submit" class="medium-button bg-color-orange color-dark-blue uppercase">Place Booking</button>
-          </form>
+            <div class="row">
+              <div class="col text-center">
+                <a href="">
+                  <button type="button"
+                    class="btn btn-facebook-sign-in-up btn-lg bg-color-facebook-blue color-off-white uppercase">
+                    <i class="fab fa-facebook"></i> Sign In With Facebook
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 modal-divider">
+                <hr>
+                <p>OR</p>
+                <hr>
+              </div>
+            </div>
+            <form>
+              <div class="form-group">
+                <label for="email-sign-in">Email address</label>
+                <input type="email" class="form-control" id="email-sign-in" aria-describedby="emailHelp"
+                  placeholder="Enter email" required>
+                <small class="form-text color-light-blue">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="password-sign-in">Password</label>
+                <input type="password" class="form-control" id="password-sign-in" placeholder="Password" required>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="sign-in-checkbox">
+                <label class="form-check-label" for="sign-in-checkbox">Remember me</label>
+              </div>
+              <button type="submit" class="medium-button bg-color-orange color-dark-blue uppercase">Sign In</button>
+            </form>
+            <div class="row">
+              <div class="col">
+                <p>Not registered yet? Sign Up Now!
+                  <button type="button" class="btn btn-success btn-sm" data-dismiss="modal" aria-label="Close"
+                    data-toggle="modal" data-target="#sign-up-modal">
+                    <i class="fas fa-user-plus"></i>
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <!-- /.booking-->
+    <!-- /.modal sign in-->
+
+    <!---------------------------------------------------------------------- Modal Sign Up-->
+    <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="sign-up-modal"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-color-sign-in-modal">
+          <div class="modal-header">
+            <h5 class="modal-title uppercase color-orange">Sign Up</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times color-ochre"></i></span>
+            </button>
+          </div>
+          <div class="modal-body color-yellow">
+            <div class="row">
+              <div class="col-12 text-center">
+                <a href="">
+                  <button type="button"
+                    class="btn btn-lg btn-google-sign-in-up bg-color-google-red color-off-white uppercase">
+                    <i class="fab fa-google"></i> Sign Up With Google
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 modal-divider">
+                <hr>
+                <p>OR</p>
+                <hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <a href="">
+                  <button type="button"
+                    class="btn btn-facebook-sign-in-up btn-lg bg-color-facebook-blue color-off-white uppercase">
+                    <i class="fab fa-facebook"></i> Sign Up With Facebook
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 modal-divider">
+                <hr>
+                <p>OR</p>
+                <hr>
+              </div>
+            </div>
+            <form>
+              <div class="form-group">
+                <label for="email-sign-up">Email address</label>
+                <input type="email" class="form-control" id="email-sign-up" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+                <small class="form-text color-light-blue">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="password-sign-up">Password</label>
+                <input type="password" class="form-control" id="password-sign-up" placeholder="Password">
+              </div>
+              <div class="form-group">
+                <label for="password-sign-up-repeat">Password</label>
+                <input type="password" class="form-control" id="password-sign-up-repeat" placeholder="Repeat Password">
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="sign-up-checkbox">
+                <label class="form-check-label" for="sign-up-checkbox">Receive Promotional Offers Via Email?</label>
+              </div>
+              <button type="submit" class="btn medium-button bg-color-orange color-dark-blue">Submit</button>
+            </form>
+            <div class="row">
+              <div class="col-12">
+                <p>Already registered? Sign In Now! <button type="button" class="btn btn-success btn-sm"
+                    data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#sign-in-modal"><i
+                      class="fas fa-sign-in-alt"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal sign up-->
+
+    <!---------------------------------------------------------------------- Modal Contact-->
+    <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-color-sign-in-modal">
+          <div class="modal-header">
+            <h5 class="modal-title uppercase color-orange">Contact</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times color-ochre"></i></span>
+            </button>
+          </div>
+          <div class="modal-body color-yellow">
+            <form>
+              <div class="form-group">
+                <label for="email-contact">Email address</label>
+                <input type="email" class="form-control" id="email-contact" aria-describedby="emailHelp"
+                  placeholder="Enter email" required>
+                <small class="form-text color-light-blue">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="select-query-type">What Would You Like To Enquire About?</label>
+                <select class="custom-select mr-sm-2" id="select-query-type">
+                  <option selected>Select Query Type</option>
+                  <option value="1">Bookings</option>
+                  <option value="2">Accommodation</option>
+                  <option value="3">Events</option>
+                  <option value="4">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="contact-text-area" rows="3"
+                  placeholder="Enter query here..."></textarea>
+              </div>
+              <button type="submit" class="medium-button bg-color-orange color-dark-blue uppercase">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.contact-->
+
+    <!---------------------------------------------------------------------- Modal Booking-->
+    <div class="modal fade" id="booking-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-color-sign-in-modal">
+          <div class="modal-header">
+            <h5 class="uppercase modal-title color-orange">Booking</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times color-ochre"></i></span>
+            </button>
+          </div>
+          <div class="modal-body color-yellow">
+            <form>
+              <div class="form-group">
+                <label for="email-booking">Email address</label>
+                <input type="email" class="form-control" id="email-booking" aria-describedby="emailHelp"
+                  placeholder="Enter email">
+                <small class="form-text color-light-blue">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="select-accommodation-type">Accommodation Option</label>
+                <select class="custom-select mr-sm-2" id="select-accommodation-type">
+                  <option selected>Select Accomodation</option>
+                  <option value="1">Two Bedroom Treehouse</option>
+                  <option value="2">Three Bedroom Bungalow</option>
+                  <option value="3">Two Bed Hotel Room</option>
+                  <option value="4">Three Bed Hotel Room</option>
+                  <option value="5">Penthouse Hotel Suite</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <label for="booking-checkin-date">Check-In Date</label>
+                    <input type="date" class="form-control" id="booking-checkin-date"></input>
+                  </div>
+                  <div class="col">
+                    <label for="booking-checkout-date">Check-Out Date</label>
+                    <input type="date" class="form-control" id="booking-checkout-date"></input>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="credit-card-number">Credit Card Number</label>
+                <input type="text" class="form-control" id="credit-card-number" aria-describedby="credit card number"
+                  placeholder="Enter Credit Card Number">
+              </div>
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <label for="credit-card-expiry">Card Expiry Date</label>
+                    <input type="text" class="form-control" id="credit-card-expiry" placeholder="E.g. 02/2021"></input>
+                  </div>
+                  <div class="col">
+                    <label for="credit-card-security-code">3 Digit Security Code</label>
+                    <input type="text" class="form-control" id="credit-card-security-code"
+                      placeholder="E.g. 123"></input>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="medium-button bg-color-orange color-dark-blue uppercase">Place
+                Booking</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.booking-->
+  </main>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">

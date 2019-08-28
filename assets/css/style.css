@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,400|Roboto:100,300,400,900&display=swap');
 
 body {
+  font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
 
@@ -15,6 +16,10 @@ a {
 }
 
 /***************************************************** Simple Colors*/
+
+.bg-color-transparent {
+  background-color: transparent;
+}
 
 .bg-color-dark-blue {
   background-color: hsl(197, 37%, 24%); /* #23404C */
@@ -74,6 +79,13 @@ a {
   text-transform: uppercase;
 }
 
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
 /*****************************************************Buttons*/
 
 .medium-button {
@@ -87,6 +99,20 @@ a {
 .medium-button:hover {
   background-color: hsl(27, 87%, 59%);
   transform: scale(1.1);
+}
+
+.large-button {
+  font-size: 25px;
+  padding: 8px 30px;
+  border: none;
+  border-radius: 6px;
+  transition: background-color .3s ease-in-out, transform .3s ease-in-out;
+}
+
+.large-button:hover {
+  background-color: hsl(12, 76%, 53%);
+  transform: scale(1.1);
+  color: #f7f7f7;
 }
 
 /*****************************************************Navbar*/
@@ -138,6 +164,12 @@ a {
   color: #264653;
 }
 
+.navbar .navbar-nav .dropdown-menu .dropdown-divider {
+  border-top: 1px solid hsl(12, 76%, 61%);
+}
+
+
+
 /* hover.css */
 .hvr-shutter-out-horizontal {
   display: inline-block;
@@ -182,7 +214,8 @@ a {
 
 /*****************************************************Modals*/
 
-#sign-in-modal .modal-body {
+#sign-in-modal .modal-body,
+#sign-up-modal .modal-body {
   margin-bottom: 30px;
 }
 
@@ -255,5 +288,162 @@ a {
 }
 .modal .modal-body .modal-divider hr {
   background-color: #E9C46A;
+}
+
+/*****************************************************Hero Shot*/
+
+.hero-shot {
+  background: url('../images/lions-big.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  position: fixed;
+  z-index: -1;
+
+  animation-name: hero-shift;
+  animation-duration: 20s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes hero-shift {
+  25% {
+    background: url('../images/lions-big.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  33% {
+    background: url('../images/antelope-big.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  58% {
+    background: url('../images/antelope-big.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  66% {
+    background: url('../images/zebras-big.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  92% {
+    background: url('../images/zebras-big.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+/* .hero-shot .chevron-parent {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+} */
+
+.hero-shot .chevron-bounce {
+  position: fixed;
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  color: rgba(245,245,245,.8);
+  font-size: 50px;
+  animation-name: chevron-bounce;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+
+@keyframes chevron-bounce {
+  50% {
+    transform: translateY(10px);
+  }
+}
+
+@media (max-width: 767px) {
+  .hero-shot .chevron-bounce {
+    font-size: 30px;
+  }
+}
+
+
+/*****************************************************Jumbotron*/
+
+.jumbotron-wrapper {
+  height: 100vh;
+  position: relative;
+}
+
+.jumbotron {
+  transform: translateY(25px);
+  width: 100%;
+}
+
+.jumbotron-wrapper .jumbotron h1,
+.jumbotron-wrapper .jumbotron h3 {
+  font-weight: 400;
+  text-shadow: 2px 2px #222;
+}
+
+.jumbotron-wrapper .jumbotron h1 {
+  font-size: 3.5rem;
+}
+
+.jumbotron-wrapper .jumbotron p {
+  width: 70%;
+  text-shadow: 1px 1px #222;
+  font-size: 1.4rem;
+  margin: 20px auto 30px;
+  line-height: 2;
+}
+
+.jumbotron-wrapper .jumbotron p mark {
+  background-color: rgba(255, 252, 74, .6);
+  border-radius: 3px;
+  padding: 0 10px;
+  line-height: 1.5;
+}
+
+.jumbotron-wrapper .jumbotron hr {
+  width: 50%;
+  height: 2px;
+}
+
+.badge-limited-time {
+  font-size: 0.9em;
+}
+
+@media (max-width: 768px) {
+  .jumbotron {
+
+    width: 100%;
+  }
+  .jumbotron-wrapper .jumbotron h1 {
+    width: 100%;
+    font-size: 3rem;
+  }
+
+  .jumbotron-wrapper .jumbotron .badge {
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 10px;
+  }
+
+  .jumbotron-wrapper .jumbotron p {
+    width: 100%;
+    line-height: 1.3;
+    margin-bottom: 30px;
+  }
 }
 
