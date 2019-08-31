@@ -485,22 +485,6 @@ a {
 }
 
 /***************************************************** About */
-
-.about .about-section-one {
-  background: linear-gradient(to bottom left, hsl(197, 37%, 24%), hsl(173, 58%, 39%));
-}
-
-
-.about .about-section-one p {
-  max-width: 70%;
-  margin: 0 auto;
-  padding: 0 20px;
-  font-size: 1.5rem;
-  line-height: 2;
-  text-align: left;
-  border-left: 4px solid #2A9D8F;
-}
-
 .about .about-section-two {
   position: relative;
   z-index: 1;
@@ -625,10 +609,180 @@ a {
   font-size: 90px;
 }
 
-@media(max-width: 767px) {
-  .about .about-section-one p {
+/*****************************************************Gallery*/
+
+.gallery {
+  background: url('../images/antique-backdrop-background-164005.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.gallery-image {
+  position: relative;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.gallery-image-border {
+  border: 15px solid #fff;
+}
+
+.gallery-image-4deg {
+  position: relative;
+  transform: rotate(4deg);
+}
+
+.gallery-image-4deg:before {
+  position: absolute;
+	content: "";
+	bottom: 10px;
+	left: 0px;
+  width: 70%;
+  height: 10%;
+  z-index: -1;
+	background: transparent;
+	-webkit-box-shadow: 0 18px 10px #222;
+	-moz-box-shadow: 0 18px 15px #222;
+	box-shadow: 0 18px 15px #222;
+	-webkit-transform: rotate(-4deg);
+	-moz-transform: rotate(-4deg);
+	-o-transform: rotate(-4deg);
+	-ms-transform: rotate(-4deg);
+	transform: rotate(-4deg);
+}
+
+.gallery-image-4deg:after {
+  position: absolute;
+	content: "";
+	top: 15px;
+	left: 10px;
+  width: 70%;
+  height: 10%;
+  z-index: -1;
+	background: transparent;
+	-webkit-box-shadow: 0 -18px 10px #222;
+	-moz-box-shadow: -0 18px 10px #222;
+	box-shadow: 0 -18px 10px #222;
+	-webkit-transform: rotate(4deg);
+	-moz-transform: rotate(4deg);
+	-o-transform: rotate(4deg);
+	-ms-transform: rotate(4deg);
+	transform: rotate(4deg);
+}
+
+.gallery-image--2deg {
+  position: relative;
+  transform: rotate(-2deg);
+}
+
+.gallery-image--2deg:before {
+  position: absolute;
+	content: "";
+	bottom: 8px;
+	right: 0px;
+  width: 50%;
+  height: 10%;
+  z-index: -1;
+	background: transparent;
+	-webkit-box-shadow: 0 18px 15px #222;
+	-moz-box-shadow: 0 18px 15px #222;
+	box-shadow: 0 18px 15px #222;
+	-webkit-transform: rotate(2.5deg);
+	-moz-transform: rotate(2.5deg);
+	-o-transform: rotate(2.5deg);
+	-ms-transform: rotate(2.5deg);
+	transform: rotate(2.5deg);
+}
+
+.gallery-image-2point5deg {
+  position: relative;
+  transform: rotate(2.5deg);
+}
+
+.gallery-image-2point5deg:before {
+  position: absolute;
+	content: "";
+	bottom: 8px;
+	left: 0px;
+  width: 42%;
+  height: 10%;
+  z-index: -1;
+	background: transparent;
+	-webkit-box-shadow: 0 18px 15px #222;
+	-moz-box-shadow: 0 18px 15px #222;
+	box-shadow: 0 18px 15px #222;
+	-webkit-transform: rotate(-6deg);
+	-moz-transform: rotate(-6deg);
+	-o-transform: rotate(-6deg);
+	-ms-transform: rotate(-6deg);
+	transform: rotate(-6deg);
+}
+
+.gallery-image-2point5deg:after {
+  position: absolute;
+	content: "";
+	bottom: 8px;
+	right: 0;
+  width: 42%;
+  height: 10%;
+  z-index: -1;
+	background: transparent;
+	-webkit-box-shadow: 0 18px 15px #222;
+	-moz-box-shadow: 0 18px 15px #222;
+	box-shadow: 0 18px 15px #222;
+	-webkit-transform: rotate(6deg);
+	-moz-transform: rotate(6deg);
+	-o-transform: rotate(6deg);
+	-ms-transform: rotate(6deg);
+	transform: rotate(6deg);
+}
+
+.thumb-tack img {
+  display: inline-block;
+  height: 30px;
+  width: 30px;
+}
+
+.thumb-tack-red {
+  position: absolute;
+  top: -10px;
+  right: 70px;
+} 
+
+.thumb-tack-blue {
+  position: absolute;
+  top: -8px;
+  left: 60px;
+}
+
+.thumb-tack-yellow {
+  position: absolute;
+  top: -14px;
+  left: 0;
+  right: 0;
+}
+
+/***************************************************** Share Section One styles */
+.section-one {
+  background: linear-gradient(to bottom left, hsl(197, 37%, 24%), hsl(173, 58%, 39%));
+}
+
+.section-one p {
+  width: 60%;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  line-height: 2;
+  text-align: left;
+  border-left: 4px solid #2A9D8F;
+}
+
+@media(max-width: 991px) {
+  .section-one p {
     line-height: 1.5;
     font-size: 1.3rem;
-    width: 95%;
+    width: 90%;
+    padding: 10px;
   }
 }

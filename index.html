@@ -9,6 +9,8 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
   <link rel="stylesheet" href="assets/css/style.css" type="text/css">
   <title>Cape Safari | The Ultimate Safari Experience</title>
 </head>
@@ -77,6 +79,7 @@
     <div class="container-fluid hero-shot">
       <h4 class="chevron-bounce text-center"><i class="fas fa-angle-double-down"></i></h4>
     </div>
+    <!--/.hero shot-->
 
     <!---------------------------------------------------------------------- Jumbotron -->
     <section class="container-fluid jumbotron-wrapper vertical-center">
@@ -94,17 +97,18 @@
         </button>
       </div>
     </section>
+    <!-- /.jumbotron -->
 
     <!---------------------------------------------------------------------- About -->
     <section class="container-fluid about">
       <div class="row section-heading">
-        <div class="col about-section-one-heading bg-color-orange">
+        <div class="col about-section-one-heading bg-color-orange py-2">
           <h2 class="color-dark-blue text-center uppercase py-2 my-auto"><i
               class="fas fa-question nav-icon color-dark-blue"></i> About</h2>
         </div>
       </div>
       <div class="row">
-        <div class="col-12 about-section-one">
+        <div class="col-12 section-one">
           <p class="color-yellow py-4 my-4">
             Established in 1954, Cape Safari has been offering a world-class
             safari experience for every budget and taste. Located in the majestic
@@ -121,58 +125,167 @@
                 <div class="about-section-two-icon-wrapper bg-color-dark-blue color-yellow">
                   <i class="fas fa-award about-section-two-icon"></i>
                 </div>
-                <p class="color-dark-blue"><strong>Multiple Awards,</strong> including Most Memorable Safari Experience.</p>
-              </div>
-            </div>
-            <!-- <div class="col-12 col-md-6 col-lg-4">
-              <div class="about-big-section-item bg-color-transparent">
-                <div class="about-big-section-icon-wrapper bg-color-dark-blue color-yellow">
-                  <i class="fas fa-sun about-big-section-icon"></i>
-                </div>
-                <hr class="bg-color-light-blue">
-                <p class="color-dark-blue">The reknowned Mediterranian climate needs to be experienced to be believed.
+                <p class="color-dark-blue"><strong>Multiple Awards,</strong> including Most Memorable Safari Experience.
                 </p>
               </div>
-            </div> -->
+            </div>
             <div class="col-12 col-lg-4">
               <div class="about-section-two-item bg-color-transparent">
                 <div class="about-section-two-icon-wrapper bg-color-dark-blue color-yellow">
                   <i class="fas fa-truck-monster about-section-two-icon"></i>
                 </div>
-                <p class="color-dark-blue"><strong>Experienced guides</strong> will ensure you don't miss a thing and get as close to the
+                <p class="color-dark-blue"><strong>Experienced guides</strong> will ensure you don't miss a thing and
+                  get as close to the
                   action as possible.</p>
               </div>
             </div>
-            <!-- <div class="col-12 col-md-6 col-lg-4">
-              <div class="about-big-section-item bg-color-transparent">
-                <div class="about-big-section-icon-wrapper bg-color-dark-blue color-yellow">
-                  <i class="fas fa-helicopter about-big-section-icon"></i>
-                </div>
-                <hr class="bg-color-light-blue">
-                <p class="color-dark-blue">Enjoy a birds-eye view of even the most unreachable locations.</p>
-              </div>
-            </div> -->
-            <!-- <div class="d-none d-lg-block col-lg-6 col-xl-4">
-              <div class="about-big-section-item bg-color-transparent">
-                <div class="about-big-section-icon-wrapper bg-color-dark-blue color-yellow">
-                  <i class="fas fa-hotel about-big-section-icon"></i>
-                </div>
-                <hr class="bg-color-light-blue">
-                <p class="color-yellow">Luxurious accomodation to suit every budget and every lifestyle.</p>
-              </div>
-            </div> -->
             <div class="col-12 col-lg-4">
               <div class="about-section-two-item bg-color-transparent">
                 <div class="about-section-two-icon-wrapper bg-color-dark-blue color-yellow">
                   <i class="fas fa-hippo about-section-two-icon"></i>
                 </div>
-                <p class="color-dark-blue">An <strong>all-encompassing variety of fauna and flora</strong> unique to the Cape region.</p>
+                <p class="color-dark-blue">An <strong>all-encompassing variety of fauna and flora</strong> unique to the
+                  Cape region.</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- /.about -->
+
+    <!---------------------------------------------------------------------- Gallery -->
+    <section class="container-fluid gallery">
+      <div class="row">
+        <div class="col-12 bg-color-orange py-2">
+          <h2 class="color-dark-blue text-center uppercase py-2 my-auto"><i
+              class="fas fa-camera nav-icon color-dark-blue"></i> Gallery</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 section-one">
+          <p class="color-yellow py-4 my-4">
+            Get a taste for some of the marvels which await you on
+            your very own safari. <strong>Click/Tap</strong> on any image
+            to browse through our entire gallery. These photos were
+            submitted by safari-goers and professional photographers alike.
+            <em>Yours could be featured next!</em>
+          </p>
+        </div>
+      </div>
+      <div class="row py-5">
+        <div class="gallery-image col-sm-6 col-lg-3">
+          <div class="gallery-image-4deg">
+            <a data-fancybox="gallery" href="assets/images/zebras-big.jpg"><img class="gallery-image-border"
+                src="assets/images/zebras-small.jpg" width="100%"></a>
+            <div class="thumb-tack thumb-tack-red">
+              <img src="assets/images/thumb-tack-red.png" alt="red thumb tack">
+            </div>
+          </div>
+        </div>
+        <div class="gallery-image col-sm-6 col-lg-3">
+          <div class="gallery-image--2deg">
+            <a data-fancybox="gallery" href="assets/images/rhinos-big.jpg"><img class="gallery-image-border"
+                src="assets/images/rhinos-small.jpg" width="100%"></a>
+            <div class="thumb-tack thumb-tack-blue">
+              <img src="assets/images/thumb-tack-blue.png" alt="red thumb tack">
+            </div>
+          </div>
+        </div>
+        <div class="gallery-image col-sm-6 col-lg-3">
+          <div class="gallery-image-2point5deg">
+            <a data-fancybox="gallery" href="assets/images/buffalo-big.jpg"><img class="gallery-image-border"
+                src="assets/images/buffalo-small.jpg" width="100%"></a>
+            <div class="thumb-tack thumb-tack-yellow">
+              <img src="assets/images/thumb-tack-yellow.png" alt="yellow thumb tack">
+            </div>
+          </div>
+        </div>
+        <div class="gallery-image col-sm-6 col-lg-3">
+          <div class="gallery-image--2deg">
+            <a data-fancybox="gallery" href="assets/images/leopard-big.jpg"><img class="gallery-image-border"
+                src="assets/images/leopard-small.jpg" width="100%"></a>
+            <div class="thumb-tack thumb-tack-blue">
+              <img src="assets/images/thumb-tack-blue.png" alt="yellow thumb tack">
+            </div>
+          </div>
+        </div>
+        <div class="gallery-image col-sm-6 col-lg-3">
+          <div class="gallery-image-2point5deg">
+            <a data-fancybox="gallery" href="assets/images/two-elephants-big.jpg"><img class="gallery-image-border"
+                src="assets/images/two-elephants-small.jpg" width="100%"></a>
+            <div class="thumb-tack thumb-tack-yellow">
+              <img src="assets/images/thumb-tack-yellow.png" alt="yellow thumb tack">
+            </div>
+          </div>
+        </div>
+        <div class="gallery-image col-sm-6 col-lg-3">
+          <div class="gallery-image-4deg">
+            <a data-fancybox="gallery" href="assets/images/cheetah-big.jpg"><img class="gallery-image-border"
+                src="assets/images/cheetah-small.jpg" width="100%"></a>
+            <div class="thumb-tack thumb-tack-red">
+              <img src="assets/images/thumb-tack-red.png" alt="red thumb tack">
+            </div>
+          </div>
+        </div>
+        <div class="gallery-image col-sm-6 col-lg-3">
+          <div class="gallery-image--2deg">
+            <a data-fancybox="gallery" href="assets/images/meerkats-big.jpg"><img class="gallery-image-border"
+                src="assets/images/meerkats-small.jpg" width="100%"></a>
+            <div class="thumb-tack thumb-tack-blue">
+              <img src="assets/images/thumb-tack-blue.png" alt="red thumb tack">
+            </div>
+          </div>
+        </div>
+        <div class="gallery-image col-sm-6 col-lg-3">
+          <div class="gallery-image-2point5deg">
+            <a data-fancybox="gallery" href="assets/images/hippos-big.jpg"><img class="gallery-image-border"
+                src="assets/images/hippos-small.jpg" width="100%"></a>
+            <div class="thumb-tack thumb-tack-yellow">
+              <img src="assets/images/thumb-tack-yellow.png" alt="yellow thumb tack">
+            </div>
+          </div>
+        </div>
+        <!-- Not displayed, but available for viewing in Fancyapp viewing mode-->
+        <div class="gallery-image d-none d-lg-inline-block col-lg-3">
+          <div class="gallery-image-4deg">
+            <a data-fancybox="gallery" href="assets/images/giraffes-big.jpg"><img class="gallery-image-border"
+                src="assets/images/giraffes-small.jpg" width="100%"></a>
+            <div class="thumb-tack thumb-tack-red">
+              <img src="assets/images/thumb-tack-red.png" alt="red thumb tack">
+            </div>
+          </div>
+        </div>
+        <div class="gallery-image d-none d-lg-inline-block col-lg-3">
+          <div class="gallery-image--2deg">
+            <a data-fancybox="gallery" href="assets/images/lioness-roar-big.jpg"><img class="gallery-image-border"
+                src="assets/images/lioness-roar-small.jpg" width="100%"></a>
+            <div class="thumb-tack thumb-tack-blue">
+              <img src="assets/images/thumb-tack-blue.png" alt="red thumb tack">
+            </div>
+          </div>
+        </div>
+        <div class="gallery-image d-none d-lg-inline-block col-lg-3">
+          <div class="gallery-image-2point5deg">
+            <a data-fancybox="gallery" href="assets/images/antelope-green-bush-big.jpg"><img
+                class="gallery-image-border" src="assets/images/antelope-green-bush-small.jpg" width="100%"></a>
+            <div class="thumb-tack thumb-tack-yellow">
+              <img src="assets/images/thumb-tack-yellow.png" alt="yellow thumb tack">
+            </div>
+          </div>
+        </div>
+        <div class="gallery-image d-none d-lg-inline-block col-lg-3">
+          <div class="gallery-image-4deg">
+            <a data-fancybox="gallery" href="assets/images/african-sunset-big.jpg"><img class="gallery-image-border"
+                src="assets/images/african-sunset-small.jpg" width="100%"></a>
+            <div class="thumb-tack thumb-tack-red">
+              <img src="assets/images/thumb-tack-red.png" alt="red thumb tack">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.gallery -->
 
 
     <!---------------------------------------------------------------------- Modal Sign In -->
@@ -252,9 +365,9 @@
         </div>
       </div>
     </div>
-    <!-- /.modal sign in-->
+    <!-- /.modal sign in -->
 
-    <!---------------------------------------------------------------------- Modal Sign Up-->
+    <!---------------------------------------------------------------------- Modal Sign Up -->
     <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="sign-up-modal"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -332,7 +445,7 @@
         </div>
       </div>
     </div>
-    <!-- /.modal sign up-->
+    <!-- /.modal sign up -->
 
 
     <!---------------------------------------------------------------------- Modal Contact -->
@@ -374,7 +487,7 @@
         </div>
       </div>
     </div>
-    <!-- /.modal contact-->
+    <!-- /.modal contact -->
 
     <!---------------------------------------------------------------------- Modal Booking -->
     <div class="modal fade" id="booking-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
@@ -443,7 +556,7 @@
         </div>
       </div>
     </div>
-    <!-- /.modal booking-->
+    <!-- /.modal booking -->
   </main>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
