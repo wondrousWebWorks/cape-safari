@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='icon' href='assets/images/favicon.ico' type='ico'>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -72,20 +73,21 @@
   </header>
 
   <main>
-    <!---------------------------------------------------------------------- Hero Shot-->
+    <!---------------------------------------------------------------------- Hero Shot -->
     <div class="container-fluid hero-shot">
       <h4 class="chevron-bounce text-center"><i class="fas fa-angle-double-down"></i></h4>
     </div>
 
-    <!---------------------------------------------------------------------- Jumbotron-->
+    <!---------------------------------------------------------------------- Jumbotron -->
     <section class="container-fluid jumbotron-wrapper vertical-center">
       <div class="jumbotron text-center bg-color-transparent color-off-white">
         <h1>The Ultimate Safari Experience.</h1>
-        <h3 class="d-none d-md-block">Adventure. Excitement. Only at Cape Safari!</h3>
+        <h3 class="d-none d-lg-block">Adventure. Excitement. Only at Cape Safari!</h3>
         <hr class="d-sm-none d-md-block my-4 bg-color-orange">
         <p><span class="badge badge-success badge-limited-time d-block d-sm-inline-block">Limited Time Offer!</span>
           Sign Up NOW and
-          receive a <span><mark class="d-inline-block">15% discount</mark></span><br class="d-sm-none"> on your first safari experience.</p>
+          receive a <span><mark class="d-inline-block">15% discount</mark></span><br class="d-sm-none"> on your first
+          safari experience.</p>
         <button type="button" class="btn large-button bg-color-ochre color-off-white" data-toggle="modal"
           data-target="#sign-up-modal">
           Sign Up
@@ -93,8 +95,87 @@
       </div>
     </section>
 
+    <!---------------------------------------------------------------------- About -->
+    <section class="container-fluid about">
+      <div class="row section-heading">
+        <div class="col about-section-one-heading bg-color-orange">
+          <h2 class="color-dark-blue text-center uppercase py-2 my-auto"><i
+              class="fas fa-question nav-icon color-dark-blue"></i> About</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 about-section-one">
+          <p class="color-yellow py-4 my-4">
+            Established in 1954, Cape Safari has been offering a world-class
+            safari experience for every budget and taste. Located in the majestic
+            Western Cape region of South Africa, we enjoy a much sought-after
+            Mediterranean climate and unparalleled natural beauty.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 about-section-two bg-color-dark-off-white">
+          <div class="row py-5">
+            <div class="col-12 col-lg-4">
+              <div class="about-section-two-item bg-color-transparent">
+                <div class="about-section-two-icon-wrapper bg-color-dark-blue color-yellow">
+                  <i class="fas fa-award about-section-two-icon"></i>
+                </div>
+                <p class="color-dark-blue"><strong>Multiple Awards,</strong> including Most Memorable Safari Experience.</p>
+              </div>
+            </div>
+            <!-- <div class="col-12 col-md-6 col-lg-4">
+              <div class="about-big-section-item bg-color-transparent">
+                <div class="about-big-section-icon-wrapper bg-color-dark-blue color-yellow">
+                  <i class="fas fa-sun about-big-section-icon"></i>
+                </div>
+                <hr class="bg-color-light-blue">
+                <p class="color-dark-blue">The reknowned Mediterranian climate needs to be experienced to be believed.
+                </p>
+              </div>
+            </div> -->
+            <div class="col-12 col-lg-4">
+              <div class="about-section-two-item bg-color-transparent">
+                <div class="about-section-two-icon-wrapper bg-color-dark-blue color-yellow">
+                  <i class="fas fa-truck-monster about-section-two-icon"></i>
+                </div>
+                <p class="color-dark-blue"><strong>Experienced guides</strong> will ensure you don't miss a thing and get as close to the
+                  action as possible.</p>
+              </div>
+            </div>
+            <!-- <div class="col-12 col-md-6 col-lg-4">
+              <div class="about-big-section-item bg-color-transparent">
+                <div class="about-big-section-icon-wrapper bg-color-dark-blue color-yellow">
+                  <i class="fas fa-helicopter about-big-section-icon"></i>
+                </div>
+                <hr class="bg-color-light-blue">
+                <p class="color-dark-blue">Enjoy a birds-eye view of even the most unreachable locations.</p>
+              </div>
+            </div> -->
+            <!-- <div class="d-none d-lg-block col-lg-6 col-xl-4">
+              <div class="about-big-section-item bg-color-transparent">
+                <div class="about-big-section-icon-wrapper bg-color-dark-blue color-yellow">
+                  <i class="fas fa-hotel about-big-section-icon"></i>
+                </div>
+                <hr class="bg-color-light-blue">
+                <p class="color-yellow">Luxurious accomodation to suit every budget and every lifestyle.</p>
+              </div>
+            </div> -->
+            <div class="col-12 col-lg-4">
+              <div class="about-section-two-item bg-color-transparent">
+                <div class="about-section-two-icon-wrapper bg-color-dark-blue color-yellow">
+                  <i class="fas fa-hippo about-section-two-icon"></i>
+                </div>
+                <p class="color-dark-blue">An <strong>all-encompassing variety of fauna and flora</strong> unique to the Cape region.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
-    <!---------------------------------------------------------------------- Modal Sign In-->
+
+    <!---------------------------------------------------------------------- Modal Sign In -->
     <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="sign-in-modal"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -253,7 +334,8 @@
     </div>
     <!-- /.modal sign up-->
 
-    <!---------------------------------------------------------------------- Modal Contact-->
+
+    <!---------------------------------------------------------------------- Modal Contact -->
     <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -292,9 +374,9 @@
         </div>
       </div>
     </div>
-    <!-- /.contact-->
+    <!-- /.modal contact-->
 
-    <!---------------------------------------------------------------------- Modal Booking-->
+    <!---------------------------------------------------------------------- Modal Booking -->
     <div class="modal fade" id="booking-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
       aria-hidden="true">
       <div class="modal-dialog modal-dialog-centered" role="document">
@@ -361,7 +443,7 @@
         </div>
       </div>
     </div>
-    <!-- /.booking-->
+    <!-- /.modal booking-->
   </main>
 
   <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

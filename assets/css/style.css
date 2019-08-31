@@ -15,7 +15,7 @@ a {
   font-family: "Raleway", sans-serif;
 }
 
-/***************************************************** Simple Colors*/
+/***************************************************** Simple Colors */
 
 .bg-color-transparent {
   background-color: transparent;
@@ -69,11 +69,23 @@ a {
   background-color: hsl(220, 46%, 48%); /* #4267b2 */
 }
 
+.bg-color-off-white {
+  background-color: hsl(0, 0%, 97%);
+}
+
 .color-off-white {
   color: hsl(0, 0%, 97%); /* #f7f7f7 */
 }
 
-/***************************************************** General Alignment / Spacing / Text Transformations*/
+.bg-color-dark-off-white {
+  background-color: hsl(0, 0%, 90%);  
+}
+
+.color-dark-off-white {
+  color: hsl(0, 0%, 90%);  
+}
+
+/***************************************************** General Alignment / Spacing / Text Transformations */
 
 .uppercase {
   text-transform: uppercase;
@@ -86,7 +98,7 @@ a {
   justify-content: center;
 }
 
-/*****************************************************Buttons*/
+/***************************************************** Buttons */
 
 .medium-button {
   font-size: 20px;
@@ -99,6 +111,11 @@ a {
 .medium-button:hover {
   background-color: hsl(27, 87%, 59%);
   transform: scale(1.1);
+  -ms-transform: scaleX(1.1);
+  -webkit-transform: scaleX(1.1);
+  -moz-transform: scaleX(1.1);
+  -o-transform: scaleX(1.1);
+  
 }
 
 .large-button {
@@ -112,10 +129,14 @@ a {
 .large-button:hover {
   background-color: hsl(12, 76%, 53%);
   transform: scale(1.1);
+  -ms-transform: scaleX(1.1);
+  -webkit-transform: scaleX(1.1);
+  -moz-transform: scaleX(1.1);
+  -o-transform: scaleX(1.1);
   color: #f7f7f7;
 }
 
-/*****************************************************Navbar*/
+/***************************************************** Navbar */
 
 .bg-color-navbar {
   background: linear-gradient(to right, #F4A261, #E9C46A, #F4A261);
@@ -135,6 +156,10 @@ a {
 
 .navbar .navbar-brand:hover {
   transform: scale(1.2);
+  -ms-transform: scaleX(1.2);
+  -webkit-transform: scaleX(1.2);
+  -moz-transform: scaleX(1.2);
+  -o-transform: scaleX(1.2);
   color: #2A9D8F;
 }
 
@@ -208,11 +233,14 @@ a {
   color: white;
 }
 .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
-  -webkit-transform: scaleX(1);
   transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -o-transform: scaleX(1);
 }
 
-/*****************************************************Modals*/
+/***************************************************** Modals */
 
 #sign-in-modal .modal-body,
 #sign-up-modal .modal-body {
@@ -254,6 +282,10 @@ a {
   background-color: hsl(7, 64%, 45%);
   color: #f7f7f7;
   transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -o-transform: scale(1.08);
 }
 
 .btn-facebook-sign-in-up {
@@ -264,6 +296,10 @@ a {
   background-color: hsl(220, 46%, 40%);
   color: #f7f7f7;
   transform: scale(1.08);
+  -ms-transform: scale(1.08);
+  -webkit-transform: scale(1.08);
+  -moz-transform: scale(1.08);
+  -o-transform: scale(1.08);
 }
 
 .modal .modal-body hr {
@@ -290,7 +326,7 @@ a {
   background-color: #E9C46A;
 }
 
-/*****************************************************Hero Shot*/
+/***************************************************** Hero Shot */
 
 .hero-shot {
   background: url('../images/lions-big.jpg');
@@ -344,12 +380,6 @@ a {
   }
 }
 
-/* .hero-shot .chevron-parent {
-  position: relative;
-  width: 100%;
-  height: 100vh;
-} */
-
 .hero-shot .chevron-bounce {
   position: fixed;
   bottom: 5px;
@@ -366,17 +396,21 @@ a {
 @keyframes chevron-bounce {
   50% {
     transform: translateY(10px);
+    -ms-transform: translateY(10px);
+  -webkit-transform: translateY(10px);
+  -moz-transform: translateY(10px);
+  -o-transform: translateY(10px);
   }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 991px) {
   .hero-shot .chevron-bounce {
     font-size: 30px;
   }
 }
 
 
-/*****************************************************Jumbotron*/
+/***************************************************** Jumbotron */
 
 .jumbotron-wrapper {
   height: 100vh;
@@ -385,6 +419,10 @@ a {
 
 .jumbotron {
   transform: translateY(25px);
+  -ms-transform: translateY(25px);
+  -webkit-transform: translateY(25px);
+  -moz-transform: translateY(25px);
+  -o-transform: translateY(25px);
   width: 100%;
 }
 
@@ -422,9 +460,8 @@ a {
   font-size: 0.9em;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 991px) {
   .jumbotron {
-
     width: 100%;
   }
   .jumbotron-wrapper .jumbotron h1 {
@@ -447,3 +484,151 @@ a {
   }
 }
 
+/***************************************************** About */
+
+.about .about-section-one {
+  background: linear-gradient(to bottom left, hsl(197, 37%, 24%), hsl(173, 58%, 39%));
+}
+
+
+.about .about-section-one p {
+  max-width: 70%;
+  margin: 0 auto;
+  padding: 0 20px;
+  font-size: 1.5rem;
+  line-height: 2;
+  text-align: left;
+  border-left: 4px solid #2A9D8F;
+}
+
+.about .about-section-two {
+  position: relative;
+  z-index: 1;
+}
+
+.about .about-section-two .about-section-two-item {
+  position: relative;
+  width: 90%;
+  height: 330px;
+  border-radius: 4px;
+  margin: 0 auto 40px;
+  transition: all .35s ease-in-out;
+}
+
+.about .about-section-two .about-section-two-item:before {
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  content: "";
+  background: linear-gradient(to bottom right, #23404C, transparent);
+  border-radius: 4px;
+}
+
+.about .about-section-two .about-section-two-item:after {
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  content: "";
+  background: linear-gradient(to top left, hsl(12, 76%, 61%), transparent);
+  border-radius: 4px;
+  box-shadow: 3px 3px 4px #222;
+}
+
+.about .about-section-two .about-section-two-icon-wrapper {
+  position: relative;
+  top: 30px;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  margin: 30px auto;
+  box-shadow: 4px 4px 3px #333;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  animation-name: about-item-color-cycle;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+
+  transition: transform .5s ease-in-out;
+}
+
+@keyframes about-item-color-cycle {
+  25% {
+    color: hsl(27, 87%, 67%);
+  }
+  50% {
+    color: hsl(12, 76%, 61%);
+  }
+  75% {
+    color: hsl(27, 87%, 67%);
+  }
+  100% {
+    color: hsl(43, 74%, 66%);
+  }
+}
+
+.about .about-section-two .about-section-two-item p {
+  position: absolute;
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  top: 210px;
+  font-size: 1.2rem;
+  text-align: center;
+  transition: transform .25s ease-in-out, color .25s ease-in-out;
+}
+
+.about .about-section-two .about-section-two-item:hover {
+  transform: scale(1.07);
+  -ms-transform: scale(1.07);
+  -webkit-transform: scale(1.07);
+  -moz-transform: scale(1.07);
+  -o-transform: scale(1.07);
+}
+
+.about .about-section-two .about-section-two-item:hover p {
+  width: 100%;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+  background-color: rgba(20, 20, 20, .5);
+  color: #E9C46A;
+  font-weight: 900;
+  font-size: 1.7rem;
+}
+
+.about .about-section-two .about-section-two-item:hover .about-section-two-icon-wrapper {
+  transform: translateY(60px) rotateY(180deg) scale(1.4);
+  -ms-transform: translateY(60px) rotateY(180deg) scale(1.4);
+  -webkit-transform: translateY(60px) rotateY(180deg) scale(1.4);
+  -moz-transform: translateY(60px) rotateY(180deg) scale(1.4);
+  -o-transform: translateY(60px) rotateY(180deg) scale(1.4);
+  z-index: -1;
+}
+
+.about-section-two .about-section-two-icon {
+  font-size: 90px;
+}
+
+@media(max-width: 767px) {
+  .about .about-section-one p {
+    line-height: 1.5;
+    font-size: 1.3rem;
+    width: 95%;
+  }
+}
