@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Raleway:200,400|Roboto:100,300,400,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,600|Roboto:100,300,400,900&display=swap');
 
 body {
   font-size: 16px;
@@ -329,7 +329,7 @@ a {
 /***************************************************** Hero Shot */
 
 .hero-shot {
-  background: url('../images/lions-big.jpg');
+  background: url('../images/hero/lions-big.jpg');
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -345,35 +345,35 @@ a {
 
 @keyframes hero-shift {
   25% {
-    background: url('../images/lions-big.jpg');
+    background: url('../images/hero/lions-big.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   33% {
-    background: url('../images/antelope-big.jpg');
+    background: url('../images/hero/antelope-big.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   58% {
-    background: url('../images/antelope-big.jpg');
+    background: url('../images/hero/antelope-big.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   66% {
-    background: url('../images/zebras-big.jpg');
+    background: url('../images/hero/zebras-big.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
   }
 
   92% {
-    background: url('../images/zebras-big.jpg');
+    background: url('../images/hero/zebras-big.jpg');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -612,7 +612,7 @@ a {
 /*****************************************************Gallery*/
 
 .gallery {
-  background: url('../images/antique-backdrop-background-164005.jpg');
+  background: url('../images/gallery/antique-backdrop-background-164005.jpg');
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -631,6 +631,7 @@ a {
 .gallery-image-4deg {
   position: relative;
   transform: rotate(4deg);
+  transition: transform .3s ease-in-out;
 }
 
 .gallery-image-4deg:before {
@@ -671,9 +672,14 @@ a {
 	transform: rotate(4deg);
 }
 
+.gallery-image-4deg:hover {
+  transform: rotate(0deg);
+}
+
 .gallery-image--2deg {
   position: relative;
   transform: rotate(-2deg);
+  transition: transform .3s ease-in-out;
 }
 
 .gallery-image--2deg:before {
@@ -695,9 +701,14 @@ a {
 	transform: rotate(2.5deg);
 }
 
+.gallery-image--2deg:hover {
+  transform: rotate(0deg);
+}
+
 .gallery-image-2point5deg {
   position: relative;
   transform: rotate(2.5deg);
+  transition: transform .3s ease-in-out;
 }
 
 .gallery-image-2point5deg:before {
@@ -738,6 +749,10 @@ a {
 	transform: rotate(6deg);
 }
 
+.gallery-image-2point5deg:hover {
+  transform: rotate(0deg);
+}
+
 .thumb-tack img {
   display: inline-block;
   height: 30px;
@@ -761,6 +776,34 @@ a {
   top: -14px;
   left: 0;
   right: 0;
+}
+
+/************************************************************************ Accomodation */
+.accommodation .accommodation-card .star-rating {
+  color: #FFFA00;
+}
+
+.accommodation .accommodation-card {
+  margin-bottom: 30px;
+  box-shadow: 4px 4px 4px #333;
+}
+
+.accommodation .accommodation-card h5 {
+  font-weight: 600;
+}
+
+.accommodation .accommodation-card .accomodation-card-checklist-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.accommodation .accommodation-card .accomodation-card-checklist-item {
+  flex-basis: 50%;
+}
+
+.accommodation .accommodation-card .accomodation-card-checklist-item .accessible {
+  font-size: 1.3rem;
 }
 
 /***************************************************** Share Section One styles */
