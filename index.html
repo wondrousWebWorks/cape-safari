@@ -15,7 +15,7 @@
   <title>Cape Safari | The Ultimate Safari Experience</title>
 </head>
 
-<body>
+<body id="top">
 
   <header class="header">
     <!---------------------------------------------------------------------- Nabvar -->
@@ -39,15 +39,15 @@
               Site Navigation
             </a>
             <div class="dropdown-menu bg-color-dark-blue" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item uppercase color-yellow" href="#"><i
+              <a class="dropdown-item uppercase color-yellow" href="#top"><i
                   class="fas fa-arrow-up nav-icon color-orange"></i>&nbsp;&nbsp;Top</a>
-              <a class="dropdown-item uppercase color-yellow" href="#"><i
+              <a class="dropdown-item uppercase color-yellow" href="#about-section"><i
                   class="fas fa-question nav-icon color-orange"></i>&nbsp;&nbsp;About</a>
-              <a class="dropdown-item uppercase color-yellow" href="#"><i
+              <a class="dropdown-item uppercase color-yellow" href="#gallery-section"><i
                   class="fas fa-images nav-icon color-orange"></i>&nbsp;&nbsp;Gallery</a>
-              <a class="dropdown-item uppercase color-yellow" href="#"><i
+              <a class="dropdown-item uppercase color-yellow" href="#accommodation-section"><i
                   class="fas fa-hotel nav-icon color-orange"></i>&nbsp;&nbsp;Accommodation</a>
-              <a class="dropdown-item uppercase color-yellow" href="#"><i
+              <a class="dropdown-item uppercase color-yellow" href="#upcoming-events-section"><i
                   class="fas fa-clipboard-list nav-icon color-orange"></i>&nbsp;&nbsp;Upcoming
                 Events</a>
               <div class="dropdown-divider"></div>
@@ -76,17 +76,15 @@
 
   <main>
     <!---------------------------------------------------------------------- Hero Shot -->
-    <div class="container-fluid hero-shot">
-      <h4 class="chevron-bounce text-center"><i class="fas fa-angle-double-down"></i></h4>
-    </div>
+    <div class="container-fluid hero-shot"></div>
     <!--/.hero shot-->
 
     <!---------------------------------------------------------------------- Jumbotron -->
-    <section class="container-fluid jumbotron-wrapper vertical-center">
-      <div class="jumbotron text-center bg-color-transparent color-off-white">
+    <section class="container-fluid jumbotron text-center bg-color-transparent color-off-white">
+      <div class="jumbotron-center-wrapper">
         <h1>The Ultimate Safari Experience.</h1>
         <h3 class="d-none d-lg-block">Adventure. Excitement. Only at Cape Safari!</h3>
-        <hr class="d-sm-none d-md-block my-4 bg-color-orange">
+        <hr class="d-sm-none d-md-block bg-color-orange">
         <p><span class="badge badge-success badge-limited-time d-block d-sm-inline-block">Limited Time Offer!</span>
           Sign Up NOW and
           receive a <span><mark class="d-inline-block">15% discount</mark></span><br class="d-sm-none"> on your first
@@ -96,11 +94,11 @@
           Sign Up
         </button>
       </div>
+      <h4 class="chevron-bounce text-center"><i class="fas fa-angle-double-down"></i></h4>
     </section>
-    <!-- /.jumbotron -->
 
     <!---------------------------------------------------------------------- About -->
-    <section class="container-fluid about">
+    <section class="container-fluid about section-wrapper" id="about-section">
       <div class="row section-heading">
         <div class="col about-section-one-heading bg-color-orange py-2">
           <h2 class="color-dark-blue text-center uppercase py-2 my-auto"><i
@@ -109,7 +107,7 @@
       </div>
       <div class="row">
         <div class="col-12 section-one">
-          <p class="color-yellow py-5 my-5">
+          <p class="color-yellow">
             Established in 1954, Cape Safari has been offering a world-class
             safari experience for every budget and taste. Located in the majestic
             Western Cape region of South Africa, we enjoy a much sought-after
@@ -118,7 +116,7 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-12 about-section-two bg-color-dark-off-white">
+        <div class="col-12 about-section-two">
           <div class="row py-5">
             <div class="col-12 col-lg-4">
               <div class="about-section-two-item bg-color-transparent">
@@ -155,7 +153,7 @@
     <!-- /.about -->
 
     <!---------------------------------------------------------------------- Gallery -->
-    <section class="container-fluid gallery">
+    <section class="container-fluid gallery section-wrapper" id="gallery-section">
       <div class="row">
         <div class="col-12 bg-color-orange py-2">
           <h2 class="color-dark-blue text-center uppercase py-2 my-auto"><i
@@ -164,7 +162,7 @@
       </div>
       <div class="row">
         <div class="col-12 section-one">
-          <p class="color-yellow py-5 my-5">
+          <p class="color-yellow">
             Get a taste for some of the marvels which await you on
             your very own safari. <strong>Click/Tap</strong> on any image
             to browse through our entire gallery. These photos were
@@ -173,7 +171,7 @@
           </p>
         </div>
       </div>
-      <div class="row py-5">
+      <div class="row py-5 gallery-section-two">
         <div class="gallery-image col-sm-6 col-lg-3">
           <div class="gallery-image-4deg">
             <a data-fancybox="gallery" href="assets/images/gallery/zebras-big.jpg"><img class="gallery-image-border"
@@ -288,7 +286,7 @@
     <!-- /.gallery -->
 
     <!---------------------------------------------------------------------- Accomodation -->
-    <section class="container-fluid accommodation bg-color-accomodation">
+    <section class="container-fluid accommodation section-wrapper" id="accommodation-section">
       <div class="row">
         <div class="col-12 bg-color-orange py-2">
           <h2 class="color-dark-blue text-center uppercase py-2 my-auto"><i
@@ -297,15 +295,15 @@
       </div>
       <div class="row">
         <div class="col-12 section-one">
-          <p class="color-yellow py-5 my-5">
+          <p class="color-yellow">
             Choose from a range of accommodation types to suite your needs. Whether you
             desire peace and quite, accessibility, self-sufficiency or a luxurious 5-Star
             experience, Cape Safari can provide what you desire at truly competitive prices.
           </p>
         </div>
       </div>
-      <div class="row bg-color-dark-off-white py-5">
-        <div class="col-12 col-sm-6 col-xl-3">
+      <div class="row py-5 accommodation-card-row">
+        <div class="col-12 col-sm-6 col-xl-3 accommodation-card-col">
           <div class="card accommodation-card text-center bg-color-dark-blue">
             <div id="accommodation-1" class="carousel slide" data-ride="carousel">
               <ol class="carousel-indicators">
@@ -342,19 +340,21 @@
                     class="fas fa-star"></i></span><span class="badge badge-success ml-2">3-Star Rating</span></p>
               <ul class="accomodation-card-checklist-wrapper">
                 <li class="accomodation-card-checklist-item">
-                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip" data-placement="bottom" title="Accessible"><i
-                      class="fab fa-accessible-icon"></i></div>
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Accessible"><i class="fab fa-accessible-icon"></i></div>
                 </li>
                 <li class="accomodation-card-checklist-item">
-                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip" data-placement="bottom" title="Wifi"><i class="fas fa-wifi"></i>
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Wifi"><i class="fas fa-wifi"></i>
                   </div>
                 </li>
                 <li class="accomodation-card-checklist-item">
-                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip" data-placement="bottom" title="Swimming Pool"><i
-                      class="fas fa-swimmer"></i></div>
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip"
+                    data-placement="bottom" title="Swimming Pool"><i class="fas fa-swimmer"></i></div>
                 </li>
                 <li class="accomodation-card-checklist-item">
-                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip" data-placement="bottom" title="Gym"><i class="fas fa-dumbbell"></i>
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip"
+                    data-placement="bottom" title="Gym"><i class="fas fa-dumbbell"></i>
                   </div>
                 </li>
               </ul>
@@ -404,19 +404,21 @@
                   class="badge badge-success ml-2">4-Star Rating</span></p>
               <ul class="accomodation-card-checklist-wrapper">
                 <li class="accomodation-card-checklist-item">
-                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success"  data-toggle="tooltip" data-placement="bottom" title="Accessible"><i
-                      class="fab fa-accessible-icon"></i></div>
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Accessible"><i class="fab fa-accessible-icon"></i></div>
                 </li>
                 <li class="accomodation-card-checklist-item">
-                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip" data-placement="bottom" title="Wifi"><i class="fas fa-wifi"></i>
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Wifi"><i class="fas fa-wifi"></i>
                   </div>
                 </li>
                 <li class="accomodation-card-checklist-item">
-                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip" data-placement="bottom" title="Swimming Pool"><i
-                      class="fas fa-swimmer"></i></div>
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Swimming Pool"><i class="fas fa-swimmer"></i></div>
                 </li>
                 <li class="accomodation-card-checklist-item">
-                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip" data-placement="bottom" title="Gym"><i class="fas fa-dumbbell"></i>
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip"
+                    data-placement="bottom" title="Gym"><i class="fas fa-dumbbell"></i>
                   </div>
                 </li>
               </ul>
@@ -465,19 +467,21 @@
                     class="fas fa-star"></i></span><span class="badge badge-success ml-2">3-Star Rating</span></p>
               <ul class="accomodation-card-checklist-wrapper">
                 <li class="accomodation-card-checklist-item">
-                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger"  data-toggle="tooltip" data-placement="bottom" title="Accessible"><i
-                      class="fab fa-accessible-icon"></i></div>
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip"
+                    data-placement="bottom" title="Accessible"><i class="fab fa-accessible-icon"></i></div>
                 </li>
                 <li class="accomodation-card-checklist-item">
-                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip" data-placement="bottom" title="Wifi"><i class="fas fa-wifi"></i>
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Wifi"><i class="fas fa-wifi"></i>
                   </div>
                 </li>
                 <li class="accomodation-card-checklist-item">
-                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip" data-placement="bottom" title="Swimming Pool"><i
-                      class="fas fa-swimmer"></i></div>
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip"
+                    data-placement="bottom" title="Swimming Pool"><i class="fas fa-swimmer"></i></div>
                 </li>
                 <li class="accomodation-card-checklist-item">
-                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip" data-placement="bottom" title="Gym"><i class="fas fa-dumbbell"></i>
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip"
+                    data-placement="bottom" title="Gym"><i class="fas fa-dumbbell"></i>
                   </div>
                 </li>
               </ul>
@@ -488,7 +492,7 @@
             </div>
           </div>
         </div>
-        
+
         <div class="col-12 col-sm-6 col-xl-3">
           <div class="card accommodation-card text-center bg-color-dark-blue">
             <div id="accommodation-4" class="carousel slide" data-ride="carousel">
@@ -527,19 +531,21 @@
                   class="badge badge-success ml-2">5-Star Rating</span></p>
               <ul class="accomodation-card-checklist-wrapper">
                 <li class="accomodation-card-checklist-item">
-                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success"  data-toggle="tooltip" data-placement="bottom" title="Accessible"><i
-                      class="fab fa-accessible-icon"></i></div>
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Accessible"><i class="fab fa-accessible-icon"></i></div>
                 </li>
                 <li class="accomodation-card-checklist-item">
-                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip" data-placement="bottom" title="Wifi"><i class="fas fa-wifi"></i>
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Wifi"><i class="fas fa-wifi"></i>
                   </div>
                 </li>
                 <li class="accomodation-card-checklist-item">
-                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip" data-placement="bottom" title="Swimming Pool"><i
-                      class="fas fa-swimmer"></i></div>
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Swimming Pool"><i class="fas fa-swimmer"></i></div>
                 </li>
                 <li class="accomodation-card-checklist-item">
-                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip" data-placement="bottom" title="Gym"><i class="fas fa-dumbbell"></i>
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Gym"><i class="fas fa-dumbbell"></i>
                   </div>
                 </li>
               </ul>
@@ -553,6 +559,71 @@
       </div>
     </section>
     <!-- /.accomodation -->
+
+    <!---------------------------------------------------------------------- Upcoming Events -->
+    <section class="container-fluid upcoming-events section-wrapper" id="upcoming-events-section">
+      <div class="row">
+        <div class="col-12 bg-color-orange py-2">
+          <h2 class="color-dark-blue text-center uppercase py-2 my-auto"><i
+              class="fas fa-calendar-check nav-icon color-dark-blue"></i> Upcoming Events</h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 col-md-6 section-one">
+          <p class="color-yellow">
+            With a newly-built world-class conference centre, Cape Safari now offers you
+            the opportunity to enjoy talks by famous scientists, workshops delivered by
+            experts in their respective fields as well as open air music concerts far enough
+            removed from wildlife as to not be disturbing to their natural behaviour. Have a look
+            at our Upcoming Events timeline to see what awaits you on your visit!
+          </p>
+        </div>
+        <div class="col-12 col-md-6 color-dark-blue upcoming-events-list-wrapper">
+          <div class="upcoming-events-list">
+            <div class="event-item" data-dates="21/09/2019">
+              <h4>Open Air Concert</h4>
+              <p>Mango Groove, The Cheetahs, African Vibez</p>
+            </div>
+            <div class="event-item" data-dates="22/09/2019">
+              <h4>Africa - The Cradle of Humankind?</h4>
+              <p>Presentation by reknowned Evolutionary Biologist Richard Dawkins</p>
+            </div>
+            <div class="event-item" data-dates="28/09/2019 - 29/09/2019">
+              <h4>Wildlife Photography Workshop</h4>
+              <p>Two day workshop by reknowned photographer Anne Stevens</p>
+            </div>
+            <div class="event-item" data-dates="05/10/2019">
+              <h4>TEDx Talk</h4>
+              <p>The importance of preservation for the good of humankind</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.upcoming-events -->
+
+    <!---------------------------------------------------------------------- Footer -->
+    <footer class="container-fluid color-yellow">
+      <ul>
+        <li><a href="#" target="_blank"><i class="fab fa-twitter-square color-ochre"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-facebook-square color-orange"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-youtube-square color-yellow"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-pinterest-square color-off-white"></i></a></li>
+      </ul>
+      <p>&copy; <script>
+          document.write(new Date().getFullYear())
+        </script>
+      </p>
+      <p><a href="https://github.com/wondrousWebWorks?tab=repositories" target="_blank"><img
+            src="/assets/images/wondrous-large.png" alt="wondrous web works full logo"></a></p>
+      <p class="quote color-yellow">
+        <em>&ldquo;It seems to me that the natural world is the greatest source of
+          excitement; the greatest source of visual beauty, the greatest source of intellectual interest. It is
+          the greatest source of so much in life that makes life worth living.&rdquo;</em>
+        &mdash;David Attenborough
+      </p>
+    </footer>
 
 
     <!---------------------------------------------------------------------- Modal Sign In -->
@@ -788,11 +859,11 @@
               </div>
               <div class="form-group">
                 <div class="form-row">
-                  <div class="col">
+                  <div class="col-6">
                     <label for="booking-checkin-date">Check-In Date</label>
                     <input type="date" class="form-control" id="booking-checkin-date"></input>
                   </div>
-                  <div class="col">
+                  <div class="col-6">
                     <label for="booking-checkout-date">Check-Out Date</label>
                     <input type="date" class="form-control" id="booking-checkout-date"></input>
                   </div>
@@ -826,9 +897,8 @@
     <!-- /.modal booking -->
   </main>
 
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
-  </script>
+  <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
     integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
   </script>
@@ -836,6 +906,24 @@
     integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
   </script>
   <script src="https://kit.fontawesome.com/90fba2838e.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+  <script type="text/javascript">
+    $(document).ready(function () {
+      $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+
+        var target = this.hash;
+        var $target = $(target);
+
+        $('html, body').stop().animate({
+          'scrollTop': $target.offset().top - 80
+        }, 1200, 'swing', function () {
+          window.location.hash = target - 80;
+        });
+      });
+    });
+  </script>
 </body>
 
 </html>
