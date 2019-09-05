@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel='icon' href='assets/images/favicon.ico' type='ico'>
+  <link rel='icon' href='favicon.ico' type='ico'>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
@@ -47,12 +47,11 @@
                   class="fas fa-images nav-icon color-orange"></i>&nbsp;&nbsp;Gallery</a>
               <a class="dropdown-item uppercase color-yellow" href="#accommodation-section"><i
                   class="fas fa-hotel nav-icon color-orange"></i>&nbsp;&nbsp;Accommodation</a>
-              <a class="dropdown-item uppercase color-yellow" href="#upcoming-events-section"><i
-                  class="fas fa-clipboard-list nav-icon color-orange"></i>&nbsp;&nbsp;Upcoming
-                Events</a>
+              <a class="dropdown-item uppercase color-yellow" href="#reviews-section"><i
+                  class="fas fa-comments nav-icon color-orange"></i>&nbsp;&nbsp;Reviews</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item uppercase color-yellow" href="#"><i
-                  class="fas fa-tram nav-icon color-orange"></i>&nbsp;&nbsp;Explore Cape Town <span
+              <a class="dropdown-item uppercase color-yellow" href="#upcoming-events-section"><i
+                  class="fas fa-clipboard-list nav-icon color-orange"></i>&nbsp;&nbsp;Upcoming Events <span
                   class="badge badge-success">NEW!</span></a>
             </div>
           </li>
@@ -100,8 +99,8 @@
     <!---------------------------------------------------------------------- About -->
     <section class="container-fluid about section-wrapper" id="about-section">
       <div class="row section-heading">
-        <div class="col about-section-one-heading bg-color-orange py-2">
-          <h2 class="color-dark-blue text-center uppercase py-2 my-auto"><i
+        <div class="col bg-color-orange py-2 section-header">
+          <h2 class="color-dark-blue text-center uppercase py-3 my-auto"><i
               class="fas fa-question nav-icon color-dark-blue"></i> About</h2>
         </div>
       </div>
@@ -155,8 +154,8 @@
     <!---------------------------------------------------------------------- Gallery -->
     <section class="container-fluid gallery section-wrapper" id="gallery-section">
       <div class="row">
-        <div class="col-12 bg-color-orange py-2">
-          <h2 class="color-dark-blue text-center uppercase py-2 my-auto"><i
+        <div class="col-12 bg-color-orange py-2 section-header">
+          <h2 class="color-dark-blue text-center uppercase py-3 my-auto"><i
               class="fas fa-camera nav-icon color-dark-blue"></i> Gallery</h2>
         </div>
       </div>
@@ -288,8 +287,8 @@
     <!---------------------------------------------------------------------- Accomodation -->
     <section class="container-fluid accommodation section-wrapper" id="accommodation-section">
       <div class="row">
-        <div class="col-12 bg-color-orange py-2">
-          <h2 class="color-dark-blue text-center uppercase py-2 my-auto"><i
+        <div class="col-12 bg-color-orange py-2 section-header">
+          <h2 class="color-dark-blue text-center uppercase py-3 my-auto"><i
               class="fas fa-hotel nav-icon color-dark-blue"></i> Accommodation</h2>
         </div>
       </div>
@@ -302,7 +301,7 @@
           </p>
         </div>
       </div>
-      <div class="row py-5 accommodation-card-row">
+      <div class="row accommodation-card-row">
         <div class="col-12 col-sm-6 col-xl-3 accommodation-card-col">
           <div class="card accommodation-card text-center bg-color-dark-blue">
             <div id="accommodation-1" class="carousel slide" data-ride="carousel">
@@ -560,11 +559,86 @@
     </section>
     <!-- /.accomodation -->
 
+    <!---------------------------------------------------------------------- Reviews -->
+    <section class="container-fluid reviews section-wrapper" id="reviews-section">
+      <div class="row">
+        <div class="col-12 bg-color-orange py-2 section-header">
+          <h2 class="color-dark-blue text-center uppercase py-3 my-auto"><i
+              class="fas fa-comments nav-icon color-dark-blue"></i> Reviews</h2>
+        </div>
+      </div>
+      <div class="row reviews-body">
+        <div class="col-12 col-md-3">
+          <div class="review-wrapper review-wrapper-padding" id="review-one">
+            <p class="color-yellow">
+              <em>&ldquo;We had an amazing time. Everything exceeded our expectations.
+                Recommended!&rdquo;</em><br>
+              &mdash;Janice Longbottom
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="review-wrapper review-wrapper-padding" id="review-two">
+            <p class="color-yellow">
+              <em>&ldquo;What an incredible experience! The safari guide was very knowlegeable
+                and experienced. Very satisfied.&rdquo;</em><br>
+              &mdash;Ray Starkiller
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="review-wrapper review-wrapper-padding" id="review-three">
+            <p class="color-yellow">
+              <em>&ldquo;The treehouse was truly unforgettable with breathtaking views of the
+                sunset. We'll be back ASAP, if not sooner...&rdquo;</em><br>
+              &mdash;Samantha Smith
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="review-wrapper review-wrapper-padding" id="review-four">
+            <p class="color-yellow">
+              <em>&ldquo;Trendy, good food and good wine with friends. Couldn't ask for more.&rdquo;</em><br>
+              &mdash;Zed du Preez
+            </p>
+          </div>
+        </div>
+        <div class="col-12 offset-md-1 col-md-3">
+          <div class="review-wrapper review-wrapper-padding" id="review-five">
+            <p class="color-yellow">
+              <em>&ldquo;We initially hesitated before booking the hotel as it streched our budget. 
+                It was totally worth it! Amazing.&rdquo;</em><br>
+              &mdash;Annabelle Frankfurt
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="review-wrapper review-wrapper-padding" id="review-six">
+            <p class="color-yellow">
+              <em>&ldquo;The wildlife was awe-inspiring. We got lucky and managed to film a pride 
+                of lions bringing down its prey. Wow...&rdquo;</em><br>
+              &mdash;Samuel Picasso
+            </p>
+          </div>
+        </div>
+        <div class="col-12 col-md-3">
+          <div class="review-wrapper review-wrapper-padding" id="review-seven">
+            <p class="color-yellow">
+              <em>&ldquo;My only complaint is that it was too short! There is o much to see 
+                and do. Make sure you book enough time.&rdquo;</em><br>
+              &mdash;Victoria Ortega
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.reviews -->
+
     <!---------------------------------------------------------------------- Upcoming Events -->
     <section class="container-fluid upcoming-events section-wrapper" id="upcoming-events-section">
       <div class="row">
-        <div class="col-12 bg-color-orange py-2">
-          <h2 class="color-dark-blue text-center uppercase py-2 my-auto"><i
+        <div class="col-12 bg-color-orange py-2 section-header">
+          <h2 class="color-dark-blue text-center uppercase py-3 my-auto"><i
               class="fas fa-calendar-check nav-icon color-dark-blue"></i> Upcoming Events</h2>
         </div>
       </div>
@@ -850,11 +924,10 @@
                 <label for="select-accommodation-type">Accommodation Option</label>
                 <select class="custom-select mr-sm-2" id="select-accommodation-type">
                   <option selected>Select Accomodation</option>
-                  <option value="1">Two Bedroom Treehouse</option>
-                  <option value="2">Three Bedroom Bungalow</option>
-                  <option value="3">Two Bed Hotel Room</option>
-                  <option value="4">Three Bed Hotel Room</option>
-                  <option value="5">Penthouse Hotel Suite</option>
+                  <option value="1">Two Bedroom Cabin</option>
+                  <option value="2">Three Bedroom Cabin</option>
+                  <option value="3">Two Bedroom Treehouse</option>
+                  <option value="4">Two Bed Hotel Room</option>
                 </select>
               </div>
               <div class="form-group">

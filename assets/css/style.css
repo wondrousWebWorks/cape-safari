@@ -494,6 +494,15 @@ a {
 }
 
 /********************************************************************** Shared Section styles */
+.section-header {
+  border-top: 8px solid hsl(12, 76%, 61%);
+  border-bottom: 4px solid hsl(12, 76%, 61%);
+}
+
+.section-header h2 {
+  font-size: 2rem;
+}
+
 
 .section-one {
   display: relative;
@@ -531,6 +540,10 @@ a {
     font-size: 1.3rem;
     width: 90%;
     padding: 40px 30px;
+  }
+
+  .section-header h2 {
+    font-size: 1.3rem;
   }
 }
 
@@ -833,16 +846,19 @@ a {
 
 .accommodation .accommodation-card-row {
   background-color: rgba(245,245,245,.9);  
-}
-
-.accomodation .accommodation-card-row {
   position: relative;
   z-index: 1;
+  padding: 120px 0 90px;
 }
 .accommodation .accommodation-card {
   position: relative;
   margin-bottom: 30px;
   box-shadow: 6px 6px 4px #333;
+  transition: box-shadow .3s ease-in-out;
+}
+
+.accommodation .accommodation-card:hover {
+  box-shadow: 10px 10px 10px #333;
 }
 
 .accommodation .accommodation-card .star-rating {
@@ -894,6 +910,104 @@ a {
   border-radius: 3px;
   font-weight: 900;
   margin-bottom: 30px;
+}
+
+/************************************************************************ Reviews */
+
+.reviews .reviews-body {
+  padding: 120px 0;
+  background-color: rgba(39, 71, 84, .8);
+}
+
+.review-wrapper {
+  position: relative;
+  width: 75%;
+  padding-top: 75%;
+  margin: 30px auto 30px;
+  border-radius: 50%;
+  border: 7px solid #2A9D8F;
+  overflow: hidden;
+  transition: transform .8s ease-in;
+}
+
+.review-wrapper p {
+  position: absolute;
+  padding: 150px 25px;
+  line-height: 2;
+  text-align: center;
+  text-shadow: 2px 2px #222;
+  background-color: rgba(20, 20, 20, .7);
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  left: 0;
+  font-size: 1.2rem;
+  transition: background-color .8s ease-in-out, color .8s ease-in-out;
+}
+
+.review-wrapper:hover {
+  transform: scale(1.4) rotateX(360deg);
+}
+
+.review-wrapper:hover p {
+  background-color: rgba(20, 20, 20, .3);
+  color: #f7f7f7;
+}
+
+#review-one {
+  background: url("../images/reviews/review-1.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#review-two {
+  background: url("../images/reviews/review-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#review-three {
+  background: url("../images/reviews/review-3.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#review-four {
+  background: url("../images/reviews/review-4.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#review-five {
+  background: url("../images/reviews/review-5.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#review-six {
+  background: url("../images/reviews/review-6.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#review-seven {
+  background: url("../images/reviews/review-7.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+@media(max-width: 568px) {
+  .review-wrapper {
+    width: 90%;
+    padding-top: 90%;
+  }
 }
 
 /************************************************************************Upcoming Events*/
