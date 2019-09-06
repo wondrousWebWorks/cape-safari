@@ -919,84 +919,99 @@ a {
   background-color: rgba(39, 71, 84, .8);
 }
 
-.review-wrapper {
+.reviews .review-wrapper {
   position: relative;
-  width: 75%;
-  padding-top: 75%;
+  width: 85%;
+  padding-top: 85%;
   margin: 30px auto 30px;
   border-radius: 50%;
   border: 7px solid #2A9D8F;
   overflow: hidden;
-  transition: transform .8s ease-in;
+  transition: transform .8s ease-in, border .8s ease-in;
 }
 
-.review-wrapper p {
+.reviews .review-wrapper .review-content-wrapper {
+  background-color: rgba(20, 20, 20, .7);
+  width: 100%;
+  height: 100%;
+  padding: 20px;
   position: absolute;
-  padding: 150px 25px;
-  line-height: 2;
+  top: 0;
+  left: 0;
+  transition: background-color .8s ease-in-out;
+}
+
+.reviews .review-wrapper .review-content-wrapper p {
+  position: absolute;
+  padding: 25px;
+  line-height: 1.5;
   text-align: center;
   text-shadow: 2px 2px #222;
-  background-color: rgba(20, 20, 20, .7);
   top: 50%;
   transform: translateY(-50%);
   right: 0;
   left: 0;
   font-size: 1.2rem;
-  transition: background-color .8s ease-in-out, color .8s ease-in-out;
+  transition: color .8s ease-in-out;
+  font-weight: 300;
 }
 
-.review-wrapper:hover {
+.reviews .review-wrapper:hover {
   transform: scale(1.4) rotateX(360deg);
+  border: 7px solid #F4A261;
 }
 
-.review-wrapper:hover p {
+.reviews .review-wrapper:hover .review-content-wrapper {
   background-color: rgba(20, 20, 20, .3);
+}
+
+.reviews .review-wrapper:hover .review-content-wrapper p {
   color: #f7f7f7;
 }
 
-#review-one {
+.reviews #review-one {
   background: url("../images/reviews/review-1.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#review-two {
+.reviews #review-two {
   background: url("../images/reviews/review-2.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#review-three {
+.reviews #review-three {
   background: url("../images/reviews/review-3.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#review-four {
+.reviews #review-four {
   background: url("../images/reviews/review-4.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#review-five {
+.reviews #review-five {
   background: url("../images/reviews/review-5.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#review-six {
+.reviews #review-six {
   background: url("../images/reviews/review-6.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
 
-#review-seven {
+.reviews #review-seven {
   background: url("../images/reviews/review-7.jpg");
   background-size: cover;
   background-position: center;
