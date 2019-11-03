@@ -1,0 +1,1165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel='icon' href='favicon.ico' type='ico'>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
+  <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+  <link rel="stylesheet" href="assets/css/style.css" type="text/css">
+  <title>Cape Safari | The Ultimate Safari Experience</title>
+</head>
+
+<body id="top">
+  <!---------------------------------------------------------------------- Header -->
+  <header class="header">
+    <!---------------------------------------------------------------------- Nabvar -->
+    <nav class="navbar bg-color-navbar fixed-top navbar-expand-lg">
+      <a class="navbar-brand color-dark-blue" href="#">
+        <i class="fas fa-binoculars"></i> <strong>Cape</strong> Safari
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggle-icon"><i class="fas fa-bars color-dark-blue"></i></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <span class="navbar-text color-dark-blue d-none d-xl-inline-block ml-auto my-auto">
+          <em>Rediscover The Joys Of Nature</em>
+        </span>
+        <ul class="navbar-nav bg-color-dark-blue ml-auto">
+          <li class="nav-item dropdown">
+            <a class="nav-link color-yellow uppercase hvr-shutter-out-horizontal dropdown-toggle" href="#"
+              id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              <i class="fas fa-compass color-orange"></i> Site Navigation
+            </a>
+            <div class="dropdown-menu bg-color-dark-blue" aria-labelledby="navbarDropdown" style="width: 280px;">
+              <a class="dropdown-item uppercase color-yellow" href="#top">
+                <i class="fas fa-arrow-up nav-icon color-orange"></i>&nbsp;&nbsp;Top
+              </a>
+              <a class="dropdown-item uppercase color-yellow" href="#about-section">
+                <i class="fas fa-question nav-icon color-orange"></i>&nbsp;&nbsp;About
+              </a>
+              <a class="dropdown-item uppercase color-yellow" href="#gallery-section">
+                <i class="fas fa-images nav-icon color-orange"></i>&nbsp;&nbsp;Gallery
+              </a>
+              <a class="dropdown-item uppercase color-yellow" href="#accommodation-section">
+                <i class="fas fa-hotel nav-icon color-orange"></i>&nbsp;&nbsp;Accommodation
+              </a>
+              <a class="dropdown-item uppercase color-yellow" href="#reviews-section">
+                <i class="fas fa-comments nav-icon color-orange"></i>&nbsp;&nbsp;Reviews
+              </a>
+              <a class="dropdown-item uppercase color-yellow" href="#explore-cape-town-section">
+                <i class="fas fa-compass nav-icon color-orange"></i>&nbsp;&nbsp;Explore Cape Town
+              </a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item uppercase color-yellow" href="#upcoming-events-section">
+                <i class="fas fa-clipboard-list nav-icon color-orange"></i>&nbsp;Upcoming Events <span
+                  class="badge badge-success">NEW!</span>
+              </a>
+            </div>
+          </li>
+          <li class="nav-item bg-color-light-blue">
+            <a class="nav-link color-dark-blue uppercase hvr-shutter-out-horizontal" data-toggle="modal"
+              data-target="#booking-modal" href="#">
+              <i class="fas fa-calendar-check"></i> Book Now!
+            </a>
+          </li>
+          <li class="nav-item bg-color-ochre">
+            <a class="nav-link color-dark-blue uppercase hvr-shutter-out-horizontal" data-toggle="modal"
+              data-target="#contact-modal" href="#">
+              <i class="fas fa-envelope"></i> Contact
+            </a>
+          </li>
+          <li class="nav-item bg-color-orange">
+            <a class="nav-link color-dark-blue uppercase hvr-shutter-out-horizontal" data-toggle="modal"
+              data-target="#sign-in-modal" href="#">
+              <i class="fas fa-sign-in-alt"></i> Sign In
+            </a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <!-- /.navbar -->
+  </header>
+
+  <main>
+    <!---------------------------------------------------------------------- Hero Shot -->
+    <div class="container-fluid hero-shot"></div>
+    <!-- /.hero shot -->
+
+    <!---------------------------------------------------------------------- Jumbotron -->
+    <section class="container-fluid jumbotron text-center bg-color-transparent color-off-white">
+      <div class="jumbotron-center-wrapper">
+        <h1>The Ultimate Safari Experience.</h1>
+        <h3 class="d-none d-lg-block">Adventure. Excitement. Only at Cape Safari!</h3>
+        <hr class="d-sm-none d-md-block bg-color-orange">
+        <p>
+          <span class="badge badge-success badge-limited-time d-block d-sm-inline-block">Limited Time Offer!</span>
+          Sign Up NOW and receive a <span><mark class="d-inline-block">15% discount</mark></span><br class="d-sm-none">
+          on your first safari experience.
+        </p>
+        <button type="button" class="btn large-button bg-color-ochre color-off-white" data-toggle="modal"
+          data-target="#sign-up-modal">
+          Sign Up
+        </button>
+      </div>
+      <h4 class="chevron-bounce text-center"><i class="fas fa-angle-double-down"></i></h4>
+    </section>
+    <!-- /.jumbotron -->
+
+    <!---------------------------------------------------------------------- About -->
+    <section class="container-fluid about" id="about-section">
+      <div class="row section-heading">
+        <div class="col bg-color-orange py-2 section-header">
+          <h2 class="color-dark-blue text-center uppercase py-3 my-auto"><i
+              class="fas fa-question nav-icon color-dark-blue"></i> About</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12">
+          <div class="row about-section-two">
+            
+            <div class="col-12 order-2 order-sm-1 col-lg-3">
+              <div class="about-section-two-item bg-color-transparent">
+                <div class="about-section-two-icon-wrapper bg-color-dark-blue color-yellow">
+                  <i class="fas fa-award about-section-two-icon"></i>
+                </div>
+                <p class="color-dark-blue"><strong>Multiple Awards,</strong> including Most Memorable Safari Experience.
+                </p>
+              </div>
+            </div>
+            
+            <div class="col-12 order-3 order-sm-2 col-lg-3">
+              <div class="about-section-two-item bg-color-transparent">
+                <div class="about-section-two-icon-wrapper bg-color-dark-blue color-yellow">
+                  <i class="fas fa-truck-monster about-section-two-icon"></i>
+                </div>
+                <p class="color-dark-blue"><strong>Experienced guides</strong> will ensure you don't miss a thing and
+                  get as close to the
+                  action as possible.</p>
+              </div>
+            </div>
+            
+            <div class="col-12 order-4 order-sm-3 col-lg-3">
+              <div class="about-section-two-item bg-color-transparent">
+                <div class="about-section-two-icon-wrapper bg-color-dark-blue color-yellow">
+                  <i class="fas fa-hippo about-section-two-icon"></i>
+                </div>
+                <p class="color-dark-blue">An <strong>all-encompassing variety of fauna and flora</strong> unique to the
+                  Cape region.</p>
+              </div>
+            </div>
+            
+            <div class="col-12 order-4 order-sm-3 col-lg-3">
+              <div class="about-section-two-item bg-color-transparent">
+                <div class="about-section-two-icon-wrapper bg-color-dark-blue color-yellow">
+                  <i class="fas fa-calendar-day about-section-two-icon"></i>
+                </div>
+                <p class="color-dark-blue">Established in <strong>1954</strong> by reknowned conservationist <em>Pieter Groenewald</em>.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    <!-- /.about -->
+
+    <!---------------------------------------------------------------------- Gallery -->
+    <section class="container-fluid gallery" id="gallery-section">
+      <div class="row">
+        <div class="col-12 bg-color-orange py-2 section-header">
+          <h2 class="color-dark-blue text-center uppercase py-3 my-auto"><i
+              class="fas fa-camera nav-icon color-dark-blue"></i> Gallery</h2>
+        </div>
+      </div>
+
+      <div class="row py-5 gallery-section-two">
+        <div class="gallery-image col-sm-6 col-lg-3">
+          <div class="gallery-image-4deg">
+            <a data-fancybox="gallery"
+              href="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699515/mp1-cape-safari/gallery/zebras-big_t6qgd1.jpg"><img
+                class="gallery-image-border"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699512/mp1-cape-safari/gallery/zebras-small_zcflo2.jpg"
+                width="100%"></a>
+            <div class="thumb-tack thumb-tack-red">
+              <img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699526/mp1-cape-safari/gallery/thumb-tack-red_auvvtd.png"
+                alt="red thumb tack">
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-image col-sm-6 col-lg-3">
+          <div class="gallery-image--2deg">
+            <a data-fancybox="gallery"
+              href="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699530/mp1-cape-safari/gallery/rhinos-big_yiruge.jpg"><img
+                class="gallery-image-border"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699518/mp1-cape-safari/gallery/rhinos-small_anklq1.jpg"
+                width="100%"></a>
+            <div class="thumb-tack thumb-tack-blue">
+              <img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699529/mp1-cape-safari/gallery/thumb-tack-blue_qyivgj.png"
+                alt="red thumb tack">
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-image col-sm-6 col-lg-3">
+          <div class="gallery-image-2point5deg">
+            <a data-fancybox="gallery"
+              href="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699515/mp1-cape-safari/gallery/buffalo-big_kashgu.jpg"><img
+                class="gallery-image-border"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699532/mp1-cape-safari/gallery/buffalo-small_dhco9i.jpg"
+                width="100%"></a>
+            <div class="thumb-tack thumb-tack-yellow">
+              <img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699523/mp1-cape-safari/gallery/thumb-tack-yellow_agpqs2.png"
+                alt="yellow thumb tack">
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-image col-sm-6 col-lg-3">
+          <div class="gallery-image--2deg">
+            <a data-fancybox="gallery"
+              href="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699520/mp1-cape-safari/gallery/leopard-big_exuz13.jpg"><img
+                class="gallery-image-border"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699529/mp1-cape-safari/gallery/leopard-small_jtcgu4.jpg"
+                width="100%"></a>
+            <div class="thumb-tack thumb-tack-blue">
+              <img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699529/mp1-cape-safari/gallery/thumb-tack-blue_qyivgj.png"
+                alt="yellow thumb tack">
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-image col-sm-6 col-lg-3">
+          <div class="gallery-image-2point5deg">
+            <a data-fancybox="gallery"
+              href="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699531/mp1-cape-safari/gallery/two-elephants-big_gdatqv.jpg"><img
+                class="gallery-image-border"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699520/mp1-cape-safari/gallery/two-elephants-small_vmmmjo.jpg"
+                width="100%"></a>
+            <div class="thumb-tack thumb-tack-yellow">
+              <img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699523/mp1-cape-safari/gallery/thumb-tack-yellow_agpqs2.png"
+                alt="yellow thumb tack">
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-image col-sm-6 col-lg-3">
+          <div class="gallery-image-4deg">
+            <a data-fancybox="gallery"
+              href="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699528/mp1-cape-safari/gallery/cheetah-big_t2x86u.jpg"><img
+                class="gallery-image-border"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699525/mp1-cape-safari/gallery/cheetah-small_nhfic6.jpg"
+                width="100%"></a>
+            <div class="thumb-tack thumb-tack-red">
+              <img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699526/mp1-cape-safari/gallery/thumb-tack-red_auvvtd.png"
+                alt="red thumb tack">
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-image col-sm-6 col-lg-3">
+          <div class="gallery-image--2deg">
+            <a data-fancybox="gallery"
+              href="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699534/mp1-cape-safari/gallery/meerkats-big_tky7rb.jpg"><img
+                class="gallery-image-border"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699531/mp1-cape-safari/gallery/meerkats-small_shhdyq.jpg"
+                width="100%"></a>
+            <div class="thumb-tack thumb-tack-blue">
+              <img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699529/mp1-cape-safari/gallery/thumb-tack-blue_qyivgj.png"
+                alt="red thumb tack">
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-image col-sm-6 col-lg-3">
+          <div class="gallery-image-2point5deg">
+            <a data-fancybox="gallery"
+              href="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699529/mp1-cape-safari/gallery/hippos-big_f9hgwz.jpg"><img
+                class="gallery-image-border"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699524/mp1-cape-safari/gallery/hippos-small_a2dxkg.jpg"
+                width="100%"></a>
+            <div class="thumb-tack thumb-tack-yellow">
+              <img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699523/mp1-cape-safari/gallery/thumb-tack-yellow_agpqs2.png"
+                alt="yellow thumb tack">
+            </div>
+          </div>
+        </div>
+        <!-- Not displayed, but available for viewing in Fancyapp viewing mode-->
+        <div class="gallery-image d-none d-lg-inline-block col-lg-3">
+          <div class="gallery-image-4deg">
+            <a data-fancybox="gallery"
+              href="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699534/mp1-cape-safari/gallery/giraffes-big_voulmw.jpg"><img
+                class="gallery-image-border"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699523/mp1-cape-safari/gallery/giraffes-small_pm2sak.jpg"
+                width="100%"></a>
+            <div class="thumb-tack thumb-tack-red">
+              <img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699526/mp1-cape-safari/gallery/thumb-tack-red_auvvtd.png"
+                alt="red thumb tack">
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-image d-none d-lg-inline-block col-lg-3">
+          <div class="gallery-image--2deg">
+            <a data-fancybox="gallery"
+              href="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699527/mp1-cape-safari/gallery/lioness-roar-big_wlw3vi.jpg"><img
+                class="gallery-image-border"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699523/mp1-cape-safari/gallery/lioness-roar-small_mp70wa.jpg"
+                width="100%"></a>
+            <div class="thumb-tack thumb-tack-blue">
+              <img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699529/mp1-cape-safari/gallery/thumb-tack-blue_qyivgj.png"
+                alt="red thumb tack">
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-image d-none d-lg-inline-block col-lg-3">
+          <div class="gallery-image-2point5deg">
+            <a data-fancybox="gallery"
+              href="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699538/mp1-cape-safari/gallery/antelope-green-bush-big_ugnhbr.jpg"><img
+                class="gallery-image-border"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699523/mp1-cape-safari/gallery/antelope-green-bush-small_su9cia.jpg"
+                width="100%"></a>
+            <div class="thumb-tack thumb-tack-yellow">
+              <img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699523/mp1-cape-safari/gallery/thumb-tack-yellow_agpqs2.png"
+                alt="yellow thumb tack">
+            </div>
+          </div>
+        </div>
+
+        <div class="gallery-image d-none d-lg-inline-block col-lg-3">
+          <div class="gallery-image-4deg">
+            <a data-fancybox="gallery"
+              href="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699523/mp1-cape-safari/gallery/african-sunset-big_sskccq.jpg"><img
+                class="gallery-image-border"
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699529/mp1-cape-safari/gallery/african-sunset-small_wwhkln.jpg"
+                width="100%"></a>
+            <div class="thumb-tack thumb-tack-red">
+              <img
+                src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699526/mp1-cape-safari/gallery/thumb-tack-red_auvvtd.png"
+                alt="red thumb tack">
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.gallery -->
+
+    <!---------------------------------------------------------------------- Accomodation -->
+    <section class="container-fluid accommodation" id="accommodation-section">
+      <div class="row">
+        <div class="col-12 bg-color-orange py-2 section-header">
+          <h2 class="color-dark-blue text-center uppercase py-3 my-auto"><i
+              class="fas fa-hotel nav-icon color-dark-blue"></i> Accommodation</h2>
+        </div>
+      </div>
+      <div class="row accommodation-card-row">
+        <div class="col-12 col-sm-6 col-xl-3 accommodation-card-col">
+          <div class="card accommodation-card text-center bg-color-dark-blue">
+            <div id="accommodation-1" class="carousel slide" data-ride="carousel" data-interval="false">
+              <ol class="carousel-indicators">
+                <li data-target="#accommodation-1" data-slide-to="0" class="active"></li>
+                <li data-target="#accommodation-1" data-slide-to="1"></li>
+                <li data-target="#accommodation-1" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699526/mp1-cape-safari/accommodation/cabin-1-1_yodlk1.jpg"
+                    class="d-block w-100" alt="cabin option one outside view">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699518/mp1-cape-safari/accommodation/cabin-1-2_tztgtx.jpg"
+                    class="d-block w-100" alt="cabin option one bedroom">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699521/mp1-cape-safari/accommodation/cabin-1-3_j8ld2k.jpg"
+                    class="d-block w-100" alt="cabin option one kitchen">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#accommodation-1" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#accommodation-1" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div class="card-body color-yellow">
+              <h5 class="card-title">Two Bedroom Cabin</h5>
+              <p class="star-rating"><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i></span><span class="badge badge-success ml-2">3-Star Rating</span></p>
+              <ul class="accomodation-card-checklist-wrapper">
+                <li class="accomodation-card-checklist-item">
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Accessible"><i class="fab fa-accessible-icon"></i></div>
+                </li>
+                <li class="accomodation-card-checklist-item">
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Wifi"><i class="fas fa-wifi"></i>
+                  </div>
+                </li>
+                <li class="accomodation-card-checklist-item">
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip"
+                    data-placement="bottom" title="Swimming Pool"><i class="fas fa-swimmer"></i></div>
+                </li>
+                <li class="accomodation-card-checklist-item">
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip"
+                    data-placement="bottom" title="Gym"><i class="fas fa-dumbbell"></i>
+                  </div>
+                </li>
+              </ul>
+              <p><span class="accomodation-card-original-price color-off-white">€47</span> <mark
+                  class="accomodation-card-discount-price bg-color-dark-off-white color-dark-blue">€40/night</mark></p>
+              <button type="button" class="medium-button bg-color-orange color-dark-blue uppercase" data-toggle="modal"
+                data-target="#booking-modal">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="card accommodation-card text-center bg-color-dark-blue">
+            <div id="accommodation-2" class="carousel slide" data-ride="carousel" data-interval="false">
+              <ol class="carousel-indicators">
+                <li data-target="#accommodation-2" data-slide-to="0" class="active"></li>
+                <li data-target="#accommodation-2" data-slide-to="1"></li>
+                <li data-target="#accommodation-2" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699513/mp1-cape-safari/accommodation/cabin-2-1_pgctvr.jpg"
+                    class="d-block w-100" alt="cabin option one outside view">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699512/mp1-cape-safari/accommodation/cabin-2-2_nqxqbv.jpg"
+                    class="d-block w-100" alt="cabin option one bedroom">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699520/mp1-cape-safari/accommodation/cabin-2-3_dwfwup.jpg"
+                    class="d-block w-100" alt="cabin option one kitchen">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#accommodation-2" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#accommodation-2" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div class="card-body color-yellow">
+              <h5 class="card-title">Three Bedroom Cabin</h5>
+              <p class="star-rating"><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i></span><span
+                  class="badge badge-success ml-2">4-Star Rating</span></p>
+              <ul class="accomodation-card-checklist-wrapper">
+                <li class="accomodation-card-checklist-item">
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Accessible"><i class="fab fa-accessible-icon"></i></div>
+                </li>
+                <li class="accomodation-card-checklist-item">
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Wifi"><i class="fas fa-wifi"></i>
+                  </div>
+                </li>
+                <li class="accomodation-card-checklist-item">
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Swimming Pool"><i class="fas fa-swimmer"></i></div>
+                </li>
+                <li class="accomodation-card-checklist-item">
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip"
+                    data-placement="bottom" title="Gym"><i class="fas fa-dumbbell"></i>
+                  </div>
+                </li>
+              </ul>
+              <p><span class="accomodation-card-original-price color-off-white">€60</span> <mark
+                  class="accomodation-card-discount-price bg-color-dark-off-white color-dark-blue">€52/night</mark></p>
+              <button type="button" class="medium-button bg-color-orange color-dark-blue uppercase" data-toggle="modal"
+                data-target="#booking-modal">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="card accommodation-card text-center bg-color-dark-blue">
+            <div id="accommodation-3" class="carousel slide" data-ride="carousel" data-interval="false">
+              <ol class="carousel-indicators">
+                <li data-target="#accommodation-3" data-slide-to="0" class="active"></li>
+                <li data-target="#accommodation-3" data-slide-to="1"></li>
+                <li data-target="#accommodation-3" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699520/mp1-cape-safari/accommodation/treehouse-1-1_fsq8op.jpg"
+                    class="d-block w-100" alt="cabin option one outside view">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699517/mp1-cape-safari/accommodation/treehouse-1-2_kk325r.jpg"
+                    class="d-block w-100" alt="cabin option one bedroom">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699514/mp1-cape-safari/accommodation/treehouse-1-3_t2e94v.jpg"
+                    class="d-block w-100" alt="cabin option one kitchen">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#accommodation-3" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#accommodation-3" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div class="card-body color-yellow">
+              <h5 class="card-title">Two Bedroom Treehouse</h5>
+              <p class="star-rating"><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i></span><span class="badge badge-success ml-2">3-Star Rating</span></p>
+              <ul class="accomodation-card-checklist-wrapper">
+                <li class="accomodation-card-checklist-item">
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip"
+                    data-placement="bottom" title="Accessible"><i class="fab fa-accessible-icon"></i></div>
+                </li>
+                <li class="accomodation-card-checklist-item">
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Wifi"><i class="fas fa-wifi"></i>
+                  </div>
+                </li>
+                <li class="accomodation-card-checklist-item">
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip"
+                    data-placement="bottom" title="Swimming Pool"><i class="fas fa-swimmer"></i></div>
+                </li>
+                <li class="accomodation-card-checklist-item">
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-danger" data-toggle="tooltip"
+                    data-placement="bottom" title="Gym"><i class="fas fa-dumbbell"></i>
+                  </div>
+                </li>
+              </ul>
+              <p><span class="accomodation-card-original-price color-off-white">€40</span> <mark
+                  class="accomodation-card-discount-price bg-color-dark-off-white color-dark-blue">€35/night</mark></p>
+              <button type="button" class="medium-button bg-color-orange color-dark-blue uppercase" data-toggle="modal"
+                data-target="#booking-modal">Book Now</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-xl-3">
+          <div class="card accommodation-card text-center bg-color-dark-blue">
+            <div id="accommodation-4" class="carousel slide" data-ride="carousel" data-interval="false">
+              <ol class="carousel-indicators">
+                <li data-target="#accommodation-4" data-slide-to="0" class="active"></li>
+                <li data-target="#accommodation-4" data-slide-to="1"></li>
+                <li data-target="#accommodation-4" data-slide-to="2"></li>
+              </ol>
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <img
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699516/mp1-cape-safari/accommodation/hotel-1-1_wqpegw.jpg"
+                    class="d-block w-100" alt="cabin option one outside view">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699515/mp1-cape-safari/accommodation/hotel-1-2_vk6ouy.jpg"
+                    class="d-block w-100" alt="cabin option one bedroom">
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699514/mp1-cape-safari/accommodation/hotel-1-3_f1pbmn.jpg"
+                    class="d-block w-100" alt="cabin option one kitchen">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#accommodation-4" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#accommodation-4" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+            <div class="card-body color-yellow">
+              <h5 class="card-title">Two Bed Hotel Room</h5>
+              <p class="star-rating"><span><i class="fas fa-star"></i><i class="fas fa-star"></i><i
+                    class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></span><span
+                  class="badge badge-success ml-2">5-Star Rating</span></p>
+              <ul class="accomodation-card-checklist-wrapper">
+                <li class="accomodation-card-checklist-item">
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Accessible"><i class="fab fa-accessible-icon"></i></div>
+                </li>
+                <li class="accomodation-card-checklist-item">
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Wifi"><i class="fas fa-wifi"></i>
+                  </div>
+                </li>
+                <li class="accomodation-card-checklist-item">
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Swimming Pool"><i class="fas fa-swimmer"></i></div>
+                </li>
+                <li class="accomodation-card-checklist-item">
+                  <div class="accomodation-card-checklist-item-icon-wrapper bg-success" data-toggle="tooltip"
+                    data-placement="bottom" title="Gym"><i class="fas fa-dumbbell"></i>
+                  </div>
+                </li>
+              </ul>
+              <p><span class="accomodation-card-original-price color-off-white">€90</span> <mark
+                  class="accomodation-card-discount-price bg-color-dark-off-white color-dark-blue">€77/night</mark></p>
+              <button type="button" class="medium-button bg-color-orange color-dark-blue uppercase" data-toggle="modal"
+                data-target="#booking-modal">Book Now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.accomodation -->
+
+    <!---------------------------------------------------------------------- Reviews -->
+    <section class="container-fluid reviews" id="reviews-section">
+      <div class="row">
+        <div class="col-12 bg-color-orange py-2 section-header">
+          <h2 class="color-dark-blue text-center uppercase py-3 my-auto"><i
+              class="fas fa-comments nav-icon color-dark-blue"></i> Reviews</h2>
+        </div>
+      </div>
+      <div class="row reviews-body">
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="review-wrapper">
+            <div class="review-image-wrapper" id="review-one">
+              <div class="review-image-wrapper-dark-background"></div>
+            </div>
+            <div class="review-content-wrapper bg-color-dark-blue">
+              <p class="color-dark-blue">
+                <em>&ldquo;We had an amazing time. Everything exceeded our expectations.
+                  Recommended!&rdquo;</em><br>
+                &mdash;Janice Longbottom
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="review-wrapper">
+            <div class="review-image-wrapper" id="review-two">
+              <div class="review-image-wrapper-dark-background"></div>
+            </div>
+            <div class="review-content-wrapper bg-color-dark-blue">
+              <p class="color-dark-blue">
+                <em>&ldquo;What an incredible experience! The safari guide was very knowlegeable
+                  and experienced. Very satisfied.&rdquo;</em><br>
+                &mdash;Ray Starkiller
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="review-wrapper">
+            <div class="review-image-wrapper" id="review-three">
+              <div class="review-image-wrapper-dark-background"></div>
+            </div>
+            <div class="review-content-wrapper bg-color-dark-blue">
+              <p class="color-dark-blue">
+                <em>&ldquo;The treehouse was truly unforgettable with breathtaking views of the
+                  sunset. We'll be back ASAP, if not sooner...&rdquo;</em><br>
+                &mdash;Samantha Smith
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-4 col-xl-3">
+          <div class="review-wrapper">
+            <div class="review-image-wrapper" id="review-four">
+              <div class="review-image-wrapper-dark-background"></div>
+            </div>
+            <div class="review-content-wrapper bg-color-dark-blue">
+              <p class="color-dark-blue">
+                <em>&ldquo;Trendy, good food and good wine with friends. Couldn't ask for more.&rdquo;</em><br>
+                &mdash;Zed du Preez
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.reviews -->
+
+    <!---------------------------------------------------------------------- Explore Cape Town -->
+    <section class="container-fluid about" id="explore-cape-town-section">
+      <div class="row section-heading">
+        <div class="col bg-color-orange py-2 section-header">
+          <h2 class="color-dark-blue text-center uppercase py-3 my-auto"><i
+              class="fas fa-compass nav-icon color-dark-blue"></i> Explore Cape Town</h2>
+        </div>
+      </div>
+
+      <div class="row explore-cape-town-card-container">
+        <div class="col-12 col-lg-6">
+          <div class="explore-cape-town" id="explore-cape-town-1">
+            <div class="explore-dark-background"></div>
+            <h2 class="explore-cape-town-header color-yellow">The Mother City</h2>
+            <p class="explore-cape-town-para">Cape Town is not only a popular international tourist
+              destination in South Africa, but Africa as a whole. This is due to its mild climate,
+              natural setting, and well-developed infrastructure. In 2018, it was voted <a
+                href="https://www.getaway.co.za/travel-news/cape-town-voted-worlds-best-city/" target="_blank">
+                <mark>the world's best city</mark></a> by readers of the British <em>The Telegraph</em> publication.
+            </p>
+            <button class="medium-button bg-color-orange color-dark-blue uppercase explore-cape-town-button"><a href="https://www.capetown.travel" target="_blank">Read More</a></button>
+          </div>
+        </div>
+
+        <div class="col-12 col-lg-6">
+          <div class="explore-cape-town" id="explore-cape-town-2">
+            <div class="explore-dark-background"></div>
+            <h2 class="explore-cape-town-header color-yellow">V&A Waterfront</h2>
+            <p class="explore-cape-town-para">The Victoria & Alfred (V&A) Waterfront in Cape Town is situated
+              on the Atlantic shore, Table Bay Harbour, the City of Cape Town and Table Mountain. Situated in South
+              Africa’s
+              oldest working harbor, it has been developed for mixed-use, with both residential and commercial
+              real estate. The Waterfront attracts more than 23 million visitors a year.</p>
+            <button class="explore-cape-town-button medium-button bg-color-orange color-dark-blue uppercase"><a href="https://www.waterfront.co.za/" target="_blank">Read More</a></button>    
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="explore-cape-town" id="explore-cape-town-3">
+            <div class="explore-dark-background"></div>
+            <h2 class="explore-cape-town-header color-yellow">Greenmarket Square</h2>
+            <p class="explore-cape-town-para">Over the years, the square has served as a slave market, a vegetable
+              market,
+              a parking lot and more recently, a flea market trading mainly African souvenirs, crafts and curios.</p>
+            <button class="explore-cape-town-button medium-button bg-color-orange color-dark-blue uppercase"><a href="https://en.wikipedia.org/wiki/Greenmarket_Square" target="_blank">Read More</a></button>     
+          </div>
+        </div>
+        <div class="col-12 col-lg-6">
+          <div class="explore-cape-town" id="explore-cape-town-4">
+            <div class="explore-dark-background"></div>
+            <h2 class="explore-cape-town-header color-yellow">Table Mountain</h2>
+            <p class="explore-cape-town-para">Table Mountain is proud to be one of the official New7Wonders of Nature,
+              and the only one to be located in an urban area,
+              making it highly accessible. Competing against major international attractions, Table Mountain made it
+              to the top seven after a campaign that attracted
+              more than 100-million global votes.</p>
+            <button class="explore-cape-town-button medium-button bg-color-orange color-dark-blue uppercase"><a href="https://www.tablemountain.net" target="_blank">Read More</a></button>    
+          </div>
+        </div>
+    </section>
+    <!-- /.explore cape town -->
+
+    <!---------------------------------------------------------------------- Upcoming Events -->
+    <section class="container-fluid upcoming-events" id="upcoming-events-section">
+      <div class="row">
+        <div class="col-12 bg-color-orange py-2 section-header">
+          <h2 class="color-dark-blue text-center uppercase py-3 my-auto"><i
+              class="fas fa-calendar-check nav-icon color-dark-blue"></i> Upcoming Events</h2>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-12 col-lg-8 upcoming-events-carousel-col">
+          <div id="upcoming-events-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active" id="upcoming-events-carousel-item-1">
+                <ul class="color-yellow">
+                  <li>State of the art Presentation Hall seats 300</li>
+                  <li>Speakers from the top of their respective fields</li>
+                  <li>Book signings for most speakers</li>
+                  <li>Free downloads of talks available upon request</li>
+                </ul>
+              </div>
+              <div class="carousel-item" id="upcoming-events-carousel-item-2">
+                <ul>
+                  <li>Open air venue</li>
+                  <li>Top artists and production quality</li>
+                  <li>Safe perimeter to keep concert goers safe</li>
+                  <li>Located to limit disruption to wildlife</li>
+                </ul>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#upcoming-events-carousel" role="button" data-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#upcoming-events-carousel" role="button" data-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="sr-only">Next</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="col-12 order-1 order-lg-3 col-lg-4 color-dark-blue upcoming-events-list-wrapper">
+          <div class="upcoming-events-list">
+            <div class="event-item" data-dates="21/09/2019">
+              <h4>Open Air Concert</h4>
+              <p>Mango Groove, The Cheetahs, African Vibez</p>
+            </div>
+            <div class="event-item" data-dates="22/09/2019">
+              <h4>Africa - The Cradle of Humankind?</h4>
+              <p>Presentation by reknowned Evolutionary Biologist Richard Dawkins</p>
+            </div>
+            <div class="event-item" data-dates="28/09/2019 - 29/09/2019">
+              <h4>Wildlife Photography Workshop</h4>
+              <p>Two day workshop by reknowned photographer Anne Stevens</p>
+            </div>
+            <div class="event-item" data-dates="05/10/2019">
+              <h4>TEDx Talk</h4>
+              <p>The importance of preservation for the good of humankind</p>
+            </div>
+            <div class="event-item" data-dates="12/10/2019">
+              <h4>Open Air Concert</h4>
+              <p>Die Antwoord, Jack Parrow</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.upcoming-events -->
+
+    <!---------------------------------------------------------------------- Footer -->
+    <footer class="container-fluid color-yellow">
+      <div class="copyright-and-logo">
+        <p class="copyright" style="display: inline-block;">&copy;&nbsp;<script>
+            document.write(new Date().getFullYear())
+          </script>
+        </p>
+        <a href="https://github.com/wondrousWebWorks?tab=repositories" target="_blank"><img
+            src="https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699539/mp1-cape-safari/wondrous-large_rrqmc8.png"
+            alt="wondrous web works full logo"></a>
+      </div>
+      <ul>
+        <li><a href="#" target="_blank"><i class="fab fa-twitter-square color-ochre"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-facebook-square color-orange"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-youtube-square color-yellow"></i></a></li>
+        <li><a href="#" target="_blank"><i class="fab fa-pinterest-square color-off-white"></i></a></li>
+      </ul>
+      <p class="quote color-yellow">
+        <em>&ldquo;It seems to me that the natural world is the greatest source of
+          excitement; the greatest source of visual beauty, the greatest source of intellectual interest. It is
+          the greatest source of so much in life that makes life worth living.&rdquo;</em>
+        &mdash;David Attenborough
+      </p>
+    </footer>
+
+    <!---------------------------------------------------------------------- Modal Sign In -->
+    <div class="modal fade" id="sign-in-modal" tabindex="-1" role="dialog" aria-labelledby="sign-in-modal"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title uppercase color-orange">Sign In</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times color-ochre"></i></span>
+            </button>
+          </div>
+          <div class="modal-body color-yellow">
+            <div class="row">
+              <div class="col-12 text-center">
+                <a href="">
+                  <button type="button"
+                    class="btn btn-lg btn-google-sign-in-up bg-color-google-red color-off-white uppercase">
+                    <i class="fab fa-google"></i> Sign In With Google
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 modal-divider">
+                <hr>
+                <p>OR</p>
+                <hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <a href="">
+                  <button type="button"
+                    class="btn btn-facebook-sign-in-up btn-lg bg-color-facebook-blue color-off-white uppercase">
+                    <i class="fab fa-facebook"></i> Sign In With Facebook
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 modal-divider">
+                <hr>
+                <p>OR</p>
+                <hr>
+              </div>
+            </div>
+            <form>
+              <div class="form-group">
+                <input type="email" class="form-control" id="email-sign-in" aria-describedby="emailHelp"
+                  placeholder="Enter email" required>
+                <small class="form-text color-light-blue">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <input type="password" class="form-control" id="password-sign-in" placeholder="Password" required>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="sign-in-checkbox">
+                <label class="form-check-label" for="sign-in-checkbox">Remember me</label>
+              </div>
+              <button type="submit" class="medium-button bg-color-orange color-dark-blue uppercase">Sign In</button>
+            </form>
+            <div class="row">
+              <div class="col">
+                <p>Not registered yet? Sign Up Now!
+                  <button type="button" class="btn btn-success btn-sm" data-dismiss="modal" aria-label="Close"
+                    data-toggle="modal" data-target="#sign-up-modal">
+                    <i class="fas fa-user-plus"></i>
+                  </button>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal sign in -->
+
+    <!---------------------------------------------------------------------- Modal Sign Up -->
+    <div class="modal fade" id="sign-up-modal" tabindex="-1" role="dialog" aria-labelledby="sign-up-modal"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-color-sign-in-modal">
+          <div class="modal-header">
+            <h5 class="modal-title uppercase color-orange">Sign Up</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times color-ochre"></i></span>
+            </button>
+          </div>
+          <div class="modal-body color-yellow">
+            <div class="row">
+              <div class="col-12 text-center">
+                <a href="">
+                  <button type="button"
+                    class="btn btn-lg btn-google-sign-in-up bg-color-google-red color-off-white uppercase">
+                    <i class="fab fa-google"></i> Sign Up With Google
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 modal-divider">
+                <hr>
+                <p>OR</p>
+                <hr>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col text-center">
+                <a href="">
+                  <button type="button"
+                    class="btn btn-facebook-sign-in-up btn-lg bg-color-facebook-blue color-off-white uppercase">
+                    <i class="fab fa-facebook"></i> Sign Up With Facebook
+                  </button>
+                </a>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12 modal-divider">
+                <hr>
+                <p>OR</p>
+                <hr>
+              </div>
+            </div>
+            <form>
+              <div class="form-group">
+                <!-- <label for="email-sign-up">Email address</label> -->
+                <input type="email" class="form-control" id="email-sign-up" aria-describedby="emailHelp"
+                  placeholder="Enter email" required>
+                <small class="form-text color-light-blue">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <!-- <label for="password-sign-up">Password</label> -->
+                <input type="password" class="form-control" id="password-sign-up" placeholder="Password" required>
+              </div>
+              <div class="form-group">
+                <!-- <label for="password-sign-up-repeat">Password</label> -->
+                <input type="password" class="form-control" id="password-sign-up-repeat" placeholder="Repeat Password"
+                  required>
+              </div>
+              <div class="form-check">
+                <input type="checkbox" class="form-check-input" id="sign-up-checkbox">
+                <label class="form-check-label" for="sign-up-checkbox">Receive Promotional Offers Via Email?</label>
+              </div>
+              <button type="submit" class="btn medium-button bg-color-orange color-dark-blue">Submit</button>
+            </form>
+            <div class="row">
+              <div class="col-12">
+                <p>Already registered? Sign In Now! <button type="button" class="btn btn-success btn-sm"
+                    data-dismiss="modal" aria-label="Close" data-toggle="modal" data-target="#sign-in-modal"><i
+                      class="fas fa-sign-in-alt"></i></a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal sign up -->
+
+
+    <!---------------------------------------------------------------------- Modal Contact -->
+    <div class="modal fade" id="contact-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-color-sign-in-modal">
+          <div class="modal-header">
+            <h5 class="modal-title uppercase color-orange">Contact</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times color-ochre"></i></span>
+            </button>
+          </div>
+          <div class="modal-body color-yellow">
+            <form>
+              <div class="form-group">
+                <label for="email-contact">Email address</label>
+                <input type="email" class="form-control" id="email-contact" aria-describedby="emailHelp"
+                  placeholder="Enter email" required>
+                <small class="form-text color-light-blue">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="select-query-type">What Would You Like To Enquire About?</label>
+                <select class="custom-select mr-sm-2" id="select-query-type">
+                  <option selected>Select Query Type</option>
+                  <option value="1">Bookings</option>
+                  <option value="2">Accommodation</option>
+                  <option value="3">Events</option>
+                  <option value="4">Transport</option>
+                  <option value="5">Fauna and Flora</option>
+                  <option value="6">Other</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <textarea class="form-control" id="contact-text-area" rows="3"
+                  placeholder="Enter query here..." required></textarea>
+              </div>
+              <button type="submit" class="medium-button bg-color-orange color-dark-blue uppercase">Submit</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal contact -->
+
+    <!---------------------------------------------------------------------- Modal Booking -->
+    <div class="modal fade" id="booking-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content bg-color-sign-in-modal">
+          <div class="modal-header">
+            <h5 class="uppercase modal-title color-orange">Booking</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true"><i class="fas fa-times color-ochre"></i></span>
+            </button>
+          </div>
+          <div class="modal-body color-yellow">
+            <form>
+              <div class="form-group">
+                <label for="email-booking">Email address</label>
+                <input type="email" class="form-control" id="email-booking" aria-describedby="emailHelp"
+                  placeholder="Enter email" required>
+                <small class="form-text color-light-blue">We'll never share your email with anyone else.</small>
+              </div>
+              <div class="form-group">
+                <label for="select-accommodation-type">Accommodation Option</label>
+                <select class="custom-select mr-sm-2" id="select-accommodation-type" required>
+                  <option selected>Select Accomodation</option>
+                  <option value="1">Two Bedroom Cabin</option>
+                  <option value="2">Three Bedroom Cabin</option>
+                  <option value="3">Two Bedroom Treehouse</option>
+                  <option value="4">Two Bed Hotel Room</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col-6">
+                    <label for="booking-checkin-date">Check-In Date</label>
+                    <input type="date" class="form-control" id="booking-checkin-date" required></input>
+                  </div>
+                  <div class="col-6">
+                    <label for="booking-checkout-date">Check-Out Date</label>
+                    <input type="date" class="form-control" id="booking-checkout-date" required></input>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="credit-card-number">Credit Card Number</label>
+                <input type="text" class="form-control" id="credit-card-number" aria-describedby="credit card number"
+                  placeholder="Enter Credit Card Number" required>
+              </div>
+              <div class="form-group">
+                <div class="form-row">
+                  <div class="col">
+                    <label for="credit-card-expiry">Card Expiry Date</label>
+                    <input type="text" class="form-control" id="credit-card-expiry" placeholder="E.g. 02/2021"
+                      required></input>
+                  </div>
+                  <div class="col">
+                    <label for="credit-card-security-code">3 Digit Security Code</label>
+                    <input type="password" class="form-control" id="credit-card-security-code" placeholder="E.g. 123"
+                      required></input>
+                  </div>
+                </div>
+              </div>
+              <button type="submit" class="medium-button bg-color-orange color-dark-blue uppercase">Place
+                Booking</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- /.modal booking -->
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="https://kit.fontawesome.com/90fba2838e.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8/jquery.min.js"></script>
+  <script>
+    $('a[href*="#"]').on('click', function(e) {
+      e.preventDefault()
+    
+      $('html, body').animate(
+        {
+          scrollTop: $($(this).attr('href')).offset().top - 80,
+        },
+        500,
+        'linear'
+      )
+    })
+  </script>
+</body>
+
+</html>
