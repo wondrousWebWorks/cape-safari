@@ -15,7 +15,7 @@ a {
   font-family: "Raleway", sans-serif;
 }
 
-/******************************************************************************** Simple Colors, Not Including Gradients, Transition Effects, RGBA or Nth-child selectors */
+/******************************************************************************** Bootstrap style Color classes, Not Including Gradients, Transition Effects, RGBA or Nth-child selectors */
 
 .bg-color-transparent {
   background-color: transparent;
@@ -85,17 +85,10 @@ a {
   color: hsl(0, 0%, 90%);  
 }
 
-/************************************************************** General Alignment / Spacing / Text Transformations */
+/************************************************************** Text Transformations */
 
 .uppercase {
   text-transform: uppercase;
-}
-
-.vertical-center {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
 }
 
 /********************************************************************************************************** Buttons */
@@ -491,6 +484,7 @@ a {
   .jumbotron .chevron-bounce {
     font-size: 30px;
     left: 10px;
+    bottom: 50px;
   }
 }
 
@@ -505,15 +499,15 @@ a {
 }
 
 
-.section-one {
+/* .section-one {
   display: relative;
   background-color:	rgba(39, 71, 84, .8);
   transition: all .5s ease-in-out;
   padding-top: 20px;
   padding-bottom: 20px;
-}
+} */
 
-.section-one p {
+/* .section-one p {
   position: relative;
   width: 90%;
   margin: 35px auto;
@@ -527,15 +521,15 @@ a {
   border-bottom-left-radius: 40px;
   border-bottom-right-radius: 10px;
   transition: background-color .5s ease-in-out;
-}
+} */
 
 @media(max-width: 991px) {
-  .section-one p {
+  /* .section-one p {
     line-height: 1.5;
     font-size: 1.2rem;
     width: 90%;
     padding: 40px 30px;
-  }
+  } */
 
   .section-header h2 {
     font-size: 1.3rem;
@@ -767,11 +761,19 @@ a {
 
 .gallery-image-4deg:hover {
   transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
 }
 
 .gallery-image--2deg {
   position: relative;
   transform: rotate(-2deg);
+  -ms-transform: rotate(-2deg);
+  -webkit-transform: rotate(-2deg);
+  -moz-transform: rotate(-2deg);
+  -o-transform: rotate(-2deg);
   transition: transform .3s ease-in-out;
 }
 
@@ -796,11 +798,19 @@ a {
 
 .gallery-image--2deg:hover {
   transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
 }
 
 .gallery-image-2point5deg {
   position: relative;
   transform: rotate(2.5deg);
+  -ms-transform: rotate(2.5deg);
+  -webkit-transform: rotate(2.5deg);
+  -moz-transform: rotate(2.5deg);
+  -o-transform: rotate(2.5deg);
   transition: transform .3s ease-in-out;
 }
 
@@ -844,6 +854,10 @@ a {
 
 .gallery-image-2point5deg:hover {
   transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
 }
 
 .thumb-tack img {
@@ -956,7 +970,7 @@ a {
 
 .reviews .review-wrapper {
   position: relative;
-  width: 80%;
+  width: 95%;
   min-height: 400px;
   margin: 30px auto;
   padding-bottom: 30px;
@@ -965,17 +979,25 @@ a {
   border-left: 3px solid #F4A261;
   border-radius: 12px;
   box-shadow: 4px 4px 4px #222;
+  -ms-box-shadow: 4px 4px 4px #222;
+  -webkit-box-shadow: 4px 4px 4px #222;
+  -moz-box-shadow: 4px 4px 4px #222;
+  -o-box-shadow: 4px 4px 4px #222;
 }
 
 .reviews .review-wrapper .review-image-wrapper {
   position: relative;
-  width: 70%;
-  padding-top: 70%;
+  width: 80%;
+  padding-top: 80%;
   margin: 30px auto;
   border-radius: 50%;
   border: 7px solid hsl(12, 76%, 61%);
   overflow: hidden;
   box-shadow: 3px 3px 3px #222;
+  -ms-box-shadow: 4px 4px 4px #222;
+  -webkit-box-shadow: 4px 4px 4px #222;
+  -moz-box-shadow: 4px 4px 4px #222;
+  -o-box-shadow: 4px 4px 4px #222;
   transition: all .8s ease-in, border .8s ease-in;
 }
 
@@ -1058,7 +1080,7 @@ a {
 
 @media(max-width: 1000px) {
   .reviews .review-wrapper .review-content-wrapper p {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
   }
 
 }
