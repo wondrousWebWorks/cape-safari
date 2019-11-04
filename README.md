@@ -90,7 +90,7 @@ A carousel successfully displays two slides with their respective background ima
 The copyright information, wondrousWebWorks logo and famous quote all display as expected.
 
 ### Devices and Browsers
-The website has been successfully tested on a variety of mobile devices, ranging from the most popular Android devices to Appel devices including tablets. Testing has also been performed on a selection of browsers, including *Chrome, Opera, Firefox, Brave, Safari* and newer versions of *Internet Explorer* (Edge).
+The website has been successfully tested on a variety of mobile devices, ranging from the most popular Android devices to Appel devices including tablets. Testing has also been performed on a selection of browsers, including *Chrome, Opera, Firefox, Brave, Safari* and newer versions of *Internet Explorer* (Edge). A few inexplicable animation issues have been noted on *Safari* mobile browsers and should be addressed and fixed in future.
 
 
 ## Deployment
@@ -113,4 +113,4 @@ All animal photos were taken from [Pexels](https://www.pexels.com/). The thumb t
 
 
 ## Acknowledgements
-In order to achieve a smooth scrolling effect to IDs, a qQuery snippet found [here](https://www.taniarascia.com/smooth-scroll-to-id-with-jquery/) was used instead of the smooth scroll-behaviour CSS option to allow for an offset because of the fixed *Navigation Bar* at the top of the screen.
+In order to achieve a smooth scrolling effect to IDs, a qQuery snippet found [here](https://www.taniarascia.com/smooth-scroll-to-id-with-jquery/) was used instead of the smooth scroll-behaviour CSS option to allow for an offset because of the fixed *Navigation Bar* at the top of the screen. **Hover.css** found [here](https://ianlunn.github.io/Hover/) was used for the horizontal shutter efect on hover of *Navigation Bar* items.
