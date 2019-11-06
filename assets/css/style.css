@@ -16,7 +16,6 @@ a {
 }
 
 /******************************************************************************** Bootstrap style Color classes, Not Including Gradients, Transition Effects, RGBA or Nth-child selectors */
-
 .bg-color-transparent {
   background-color: transparent;
 }
@@ -86,13 +85,11 @@ a {
 }
 
 /************************************************************** Text Transformations */
-
 .uppercase {
   text-transform: uppercase;
 }
 
 /********************************************************************************************************** Buttons */
-
 .medium-button {
   font-size: 20px;
   padding: 7px 15px;
@@ -130,7 +127,6 @@ a {
 }
 
 /****************************************************************************************************** Navbar */
-
 .bg-color-navbar {
   background: linear-gradient(to right, #F4A261, #E9C46A, #F4A261);
 }
@@ -187,9 +183,7 @@ a {
   border-top: 1px solid hsl(12, 76%, 61%);
 }
 
-
-
-/* hover.css */
+/************************************************************************************************* hover.css */
 .hvr-shutter-out-horizontal {
   display: inline-block;
   vertical-align: middle;
@@ -203,6 +197,7 @@ a {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 }
+
 .hvr-shutter-out-horizontal:before {
   content: "";
   position: absolute;
@@ -223,9 +218,11 @@ a {
   -webkit-transition-timing-function: ease-out;
   transition-timing-function: ease-out;
 }
+
 .hvr-shutter-out-horizontal:hover, .hvr-shutter-out-horizontal:focus, .hvr-shutter-out-horizontal:active {
   color: white;
 }
+
 .hvr-shutter-out-horizontal:hover:before, .hvr-shutter-out-horizontal:focus:before, .hvr-shutter-out-horizontal:active:before {
   transform: scaleX(1);
   -ms-transform: scaleX(1);
@@ -235,7 +232,6 @@ a {
 }
 
 /**************************************************************************************************** Modals */
-
 #sign-in-modal .modal-body,
 #sign-up-modal .modal-body {
   margin-bottom: 30px;
@@ -321,7 +317,6 @@ a {
 }
 
 /***************************************************************************************** Hero Shot */
-
 .hero-shot {
   background: url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1570699544/mp1-cape-safari/hero/lions-big_xjm3aw.jpg');
   background-size: cover;
@@ -374,10 +369,7 @@ a {
   }
 }
 
-
 /********************************************************************************************** Jumbotron */
-
-
 .jumbotron {
   height: 100vh;
   width: 100%;
@@ -484,7 +476,7 @@ a {
   .jumbotron .chevron-bounce {
     font-size: 30px;
     left: 10px;
-    bottom: 50px;
+    bottom: 30px;
   }
 }
 
@@ -498,39 +490,7 @@ a {
   font-size: 2rem;
 }
 
-
-/* .section-one {
-  display: relative;
-  background-color:	rgba(39, 71, 84, .8);
-  transition: all .5s ease-in-out;
-  padding-top: 20px;
-  padding-bottom: 20px;
-} */
-
-/* .section-one p {
-  position: relative;
-  width: 90%;
-  margin: 35px auto;
-  padding: 20px 30px;
-  font-size: 1.3rem;
-  line-height: 1.5;
-  text-align: left;
-  background-color: rgba(0,0,0,.5);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 40px;
-  border-bottom-left-radius: 40px;
-  border-bottom-right-radius: 10px;
-  transition: background-color .5s ease-in-out;
-} */
-
 @media(max-width: 991px) {
-  /* .section-one p {
-    line-height: 1.5;
-    font-size: 1.2rem;
-    width: 90%;
-    padding: 40px 30px;
-  } */
-
   .section-header h2 {
     font-size: 1.3rem;
   }
@@ -669,27 +629,7 @@ a {
   }
 }
 
-/* .section-one .about-para {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  padding: 30px;
-  margin: 0;
-  width: 90%;
-  margin: auto;
-  font-size: 1.2rem;
-  line-height: 1.5;
-  text-align: left;
-  background-color: rgba(0,0,0,.5);
-  border-top-left-radius: 10px;
-  border-top-right-radius: 80px;
-  border-bottom-left-radius: 80px;
-  border-bottom-right-radius: 10px;
-  transition: background-color .5s ease-in-out;
-} */
-
 /***************************************************************************************Gallery*/
-
 .gallery-intro {
   background: url('https://res.cloudinary.com/wondrouswebworks/image/upload/v1570791786/mp1-cape-safari/gallery/gallery-section-one_kgm5cu.jpg');
   background-position: center;
@@ -886,7 +826,6 @@ a {
 }
 
 /************************************************************************ Accomodation */
-
 .accommodation .accommodation-card-row {
   background-color: rgba(245,245,245,.9);  
   position: relative;
@@ -962,7 +901,6 @@ a {
 }
 
 /************************************************************************ Reviews */
-
 .reviews .reviews-body {
   padding: 60px 0;
   background-color: rgba(39, 71, 84, .8);
@@ -1425,7 +1363,6 @@ a {
 }
 
 /************************************************************************ Footer */
-
 footer {
   min-height: 100px;
   background: linear-gradient(to top, #264653, #2A9D8F);
