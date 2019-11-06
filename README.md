@@ -58,6 +58,9 @@ In the future, I would like to add more accommodation options with more than the
 ## Testing
 The fictional Cape Safari company set out a list of user stories that had to be satisfied for the site to be considered appropriate for their needs.
 
+### Devices and Browsers
+The website has been successfully tested on a variety of mobile devices, ranging from the most popular Android devices to Appel devices including tablets. Testing has also been performed on a selection of browsers, including *Chrome, Opera, Firefox, Brave, Safari* and newer versions of *Internet Explorer* (Edge). A few inexplicable animation issues have been noted on *Safari* mobile browsers and should be addressed and fixed in future.
+
 ### Navbar
 On clicking any of the links in the navbar's *SITE NAVIGATION* dropdown, the page will scroll smoothly to the relevant section using the jQuery snippet listed in the **Acknowlegements** section of this document. Clicking the *BOOK NOW*, *CONTACT US* or *SIGN IN* navigation links will open the links' corresponding modal.
 
@@ -88,9 +91,6 @@ A carousel successfully displays two slides with their respective background ima
 
 ### Footer
 The copyright information, wondrousWebWorks logo and famous quote all display as expected.
-
-### Devices and Browsers
-The website has been successfully tested on a variety of mobile devices, ranging from the most popular Android devices to Appel devices including tablets. Testing has also been performed on a selection of browsers, including *Chrome, Opera, Firefox, Brave, Safari* and newer versions of *Internet Explorer* (Edge). A few inexplicable animation issues have been noted on *Safari* mobile browsers and should be addressed and fixed in future.
 
 
 ## Deployment
