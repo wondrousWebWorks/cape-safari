@@ -109,7 +109,7 @@ All content was written by me, apart from:
  
 
 ## Media
-All animal photos were taken from [Pexels](https://www.pexels.com/). The thumb tack vector images used in the **Gallery** section were taken from [Vecteezy](https://www.vecteezy.com) and cropped to give the illusion of being pushed into the wall. I designed the wondrousWebWorks() logo myself. All icons were taken from [Font Awesome](https://fontawesome.com/).
+All animal photos were taken from [Pexels](https://www.pexels.com/). The thumb tack vector images used in the **Gallery** section were taken from [Vecteezy](https://www.vecteezy.com) and cropped to give the illusion of being pushed into the wall. I designed the wondrousWebWorks() logo myself. All images are hosted on [Cloudinary](https://www.cloudinary.com/). All icons were taken from [Font Awesome](https://fontawesome.com/).
 
 
 ## Acknowledgements
