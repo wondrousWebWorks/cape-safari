@@ -54,7 +54,6 @@ This site makes heavy use of *Bootstrap* features, such as:
 ### Features Left to Implement
 In the future, I would like to add more accommodation options with more than the four basic anemnities listed at present. I would also like to add links to the images in the **Gallery** section to take the user to a *Wikipeadia* entry for the particular animal in question. Photos of the unique flora found only in the Cape region of South Africa would also be a welcome addition. A separate page with some brief introductions to the fauna and flaura found at Cape Safari can also be added down the line.
 
-
 ## Testing
 The fictional Cape Safari company set out a list of user stories that had to be satisfied for the site to be considered appropriate for their needs.
 
