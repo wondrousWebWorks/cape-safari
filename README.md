@@ -6,7 +6,7 @@ This a website created for a fictional company, Cape Safari, which claims to off
 
 
 ## Demo
-A live demo can be found on [Github pages](https://wondrouswebworks.github.io/mp1-cape-safari/).
+A live demo can be found on [Github pages](https://wondrouswebworks.github.io/cape-safari/).
 
 
 ## UX
